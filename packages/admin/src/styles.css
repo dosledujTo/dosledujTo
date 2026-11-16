@@ -1,0 +1,70 @@
+/* Doplnky k AdminLTE — len to, čo zadanie §10 vyžaduje a téma nedáva. */
+
+/* Sidebar odkazy: AdminLTE ich čaká s ikonami, my ich máme bez. */
+.sidebar-menu .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem 0.125rem;
+}
+.sidebar-menu .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.sidebar-menu .nav-link.active {
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+/* Viditeľný fokus je podlaha, nie nadstavba (zadanie §10, prístupnosť). */
+:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 2px;
+}
+
+/* Lišta s uložením zostáva na dohľad aj pri dlhom formulári. */
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+}
+
+/* Riadok konceptu v zozname — koncepty sa nesmú strácať medzi publikovanými. */
+.table > tbody > tr.table-warning > td {
+  --bs-table-bg-type: rgba(255, 193, 7, 0.12);
+}
+
+/* Modály renderujeme bez AdminLTE JS, takže potrebujú vlastný z-index. */
+.modal.d-block {
+  z-index: 1080;
+}
+
+/* ── Tmavý režim ───────────────────────────────────────────────────────────
+ *
+ * Bootstrap 5.3 prepína tému cez `data-bs-theme`, ale utility, ktoré si farbu
+ * pomenúvajú natvrdo (`text-bg-light`, `table-light`, `text-bg-dark`), zostávajú
+ * v oboch témach rovnaké — svetlý štítok na tmavom pozadí je čitateľný, ale
+ * kričí viac než údaj, ktorý nesie. Preto sa v tmavom režime mapujú na tie isté
+ * *role* z témy, nie na konkrétne farby.
+ */
+[data-bs-theme="dark"] .text-bg-light {
+  color: var(--bs-body-color) !important;
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+[data-bs-theme="dark"] .text-bg-dark {
+  color: var(--bs-body-color) !important;
+  background-color: var(--bs-secondary-bg) !important;
+}
+
+[data-bs-theme="dark"] .table-light {
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-bg: var(--bs-tertiary-bg);
+  --bs-table-border-color: var(--bs-border-color);
+}
+
+/* Modál si kreslí vlastný podklad (renderujeme ho bez AdminLTE JS), takže
+ * v tmavom režime musí byť tmavší — inak presvieti obsah pod ním. */
+[data-bs-theme="dark"] .modal.d-block {
+  background: rgba(0, 0, 0, 0.7) !important;
+}

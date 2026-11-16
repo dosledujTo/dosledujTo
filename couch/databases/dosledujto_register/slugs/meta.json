@@ -1,0 +1,5 @@
+{
+  "views": {
+    "unique": { "reduce": "_count" }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "views": {
+    "tag_usage": { "reduce": "_count" }
+  }
+}

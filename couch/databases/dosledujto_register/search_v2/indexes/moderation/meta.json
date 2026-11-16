@@ -1,0 +1,17 @@
+{
+  "default_analyzer": "standard",
+  "analyzer": {
+    "name": "perfield",
+    "default": "standard",
+    "fields": {
+      "status": "keyword",
+      "origin": "keyword",
+      "target_type": "keyword",
+      "target_id": "keyword",
+      "target_path": "keyword",
+      "new_entity": "keyword",
+      "author_id": "keyword",
+      "reviewed_by": "keyword"
+    }
+  }
+}

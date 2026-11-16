@@ -1,0 +1,12 @@
+# Kontext pre ci/test.Dockerfile (BuildKit použije tento súbor namiesto
+# koreňového .dockerignore, ktorý vylučuje test/ — testy tu potrebujeme).
+node_modules
+**/node_modules
+.npm
+.git
+.env
+docker/.env
+docker/couchdb-3-with-cluseau
+design_handoff_*
+*.log
+**/.DS_Store

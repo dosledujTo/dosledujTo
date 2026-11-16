@@ -1,0 +1,5 @@
+{
+  "views": {
+    "by_court": { "reduce": "_count" }
+  }
+}

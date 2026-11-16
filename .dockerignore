@@ -1,0 +1,13 @@
+# Do image ide len package.json a package-lock.json — zdrojáky sa mountujú
+# z hosta. Tento súbor teda hlavne zrýchľuje odosielanie kontextu.
+node_modules
+**/node_modules
+
+packages/admin/dist
+.git
+.env
+*.log
+.DS_Store
+**/.DS_Store
+docker/couchdb-3-with-cluseau
+test

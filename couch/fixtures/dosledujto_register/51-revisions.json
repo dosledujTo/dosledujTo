@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "revision:0192a1b0-7c0b-7000-8000-000000000001",
+    "type": "revision",
+    "target_type": "person",
+    "target_id": "person:0192a1b0-7c03-7000-8000-000000000002",
+    "target_rev_before": "3-0000000000000000000000000000aaaa",
+    "target_rev_after": "4-0000000000000000000000000000bbbb",
+    "diff": [
+      {
+        "op": "replace",
+        "path": "/short_bio/value",
+        "value": "Riaditeľka odboru dotácií na Mestskom úrade Testovice; v novembri 2025 ju súd v kauze Skúšobné dotácie oslobodil."
+      },
+      {
+        "op": "add",
+        "path": "/short_bio/sources/0",
+        "value": "article:0192a1b0-7c02-7000-8000-000000000004"
+      }
+    ],
+    "actor_id": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "actor_role": "moderator",
+    "at": "2026-08-07T09:05:00Z",
+    "suggestion_id": "suggestion:0192a1b0-7c0a-7000-8000-000000000003",
+    "reason": "Prijatý podnet: profil neodrážal oslobodzujúci rozsudok.",
+    "created_at": "2026-08-07T09:05:00Z",
+    "updated_at": "2026-08-07T09:05:00Z"
+  },
+  {
+    "_id": "revision:0192a1b0-7c0b-7000-8000-000000000002",
+    "type": "revision",
+    "target_type": "case",
+    "target_id": "case:0192a1b0-7c05-7000-8000-000000000001",
+    "target_rev_before": "6-0000000000000000000000000000cccc",
+    "target_rev_after": "7-0000000000000000000000000000dddd",
+    "diff": [
+      { "op": "replace", "path": "/phase/value", "value": "indictment" },
+      {
+        "op": "add",
+        "path": "/phase/sources/0",
+        "value": "article:0192a1b0-7c02-7000-8000-000000000003"
+      }
+    ],
+    "actor_id": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "actor_role": "moderator",
+    "at": "2026-08-07T09:30:00Z",
+    "suggestion_id": null,
+    "reason": "Podaná obžaloba, doložené úradným dokumentom.",
+    "created_at": "2026-08-07T09:30:00Z",
+    "updated_at": "2026-08-07T09:30:00Z"
+  }
+]

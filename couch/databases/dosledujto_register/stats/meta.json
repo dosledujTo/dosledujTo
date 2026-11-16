@@ -1,0 +1,16 @@
+{
+  "views": {
+    "coverage": {
+      "reduce": "_sum"
+    },
+    "amounts": {
+      "reduce": "_sum"
+    },
+    "articles_by_case_day": {
+      "reduce": "_count"
+    },
+    "entity_cases": {
+      "reduce": "_count"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+# Viac pm2 kontajnerov nad jedným image. Čo ktorý spustí, určuje ecosystem
+# config v `command` — nie iný build.
+#
+# **Zdrojáky sa nekopírujú do image, mountujú sa z hosta.** Aktualizácia kódu je
+# `git pull` a `pm2 reload` v kontajneri; rebuild treba len pri zmene závislostí.
+#
+# **Služby majú profily**, takže sa dá vybrať, čo naštartuje:
+#
+#   docker compose --profile app up -d                    # len API + admin
+#   docker compose --profile workers up -d                # len workeri
+#   docker compose --profile app --profile workers up -d  # oboje
+#
+# Alebo natrvalo v `docker/.env`:  COMPOSE_PROFILES=app,workers
+#
+# Bez profilu sa nespustí nič — to je zámer, nie chyba.
+#
+# CouchDB a nginx tu zatiaľ nie sú; pribudnú s vlastnými profilmi (`couch`,
+# `nginx`). Kontajnery sa na CouchDB pripájajú cez `COUCH_URL`.
+
+name: dosledujto
+
+x-app: &app
+  build:
+    context: ..
+    dockerfile: docker/app/Dockerfile
+  image: dosledujto/app:latest
+  restart: unless-stopped
+  init: true
+  env_file:
+    - .env
+  volumes:
+    # Repozitár z hosta. Zmena kódu je hneď v kontajneri.
+    - ..:/app
+    # Výnimka spod bind mountu: linuxové závislosti z image. Bez tohto by ich
+    # prekryli tie z hosta a natívne moduly by spadli.
+    - node_modules:/app/node_modules
+  working_dir: /app
+  networks:
+    - default
+    - couch
+  # Prístup na host (napr. CouchDB bežiaca mimo Dockeru). Na Docker Desktop to
+  # funguje aj bez toho, na Linuxe nie.
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "5"
+
+services:
+  # REST API + admin SPA pod /admin
+  pm2-api-admin:
+    <<: *app
+    profiles: ["app"]
+    container_name: pm2-api-admin
+    command: ["pm2-runtime", "start", "docker/ecosystem/api-admin.config.cjs"]
+    ports:
+      - "${API_PORT:-3000}:3000"
+    volumes:
+      - ..:/app
+      - node_modules:/app/node_modules
+      # Logy pm2 prežijú reštart kontajnera, takže `pm2 logs` po páde ukáže,
+      # čo sa dialo pred ním.
+      - api-admin-logs:/root/.pm2/logs
+    healthcheck:
+      # Bez curl — slim image ho nemá, node vie to isté.
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  # Naplánované úlohy workera (crawler; matcher a notifikátor pribudnú)
+  pm2-workers:
+    <<: *app
+    profiles: ["workers"]
+    container_name: pm2-workers
+    command: ["pm2-runtime", "start", "docker/ecosystem/workers.config.cjs"]
+    volumes:
+      - ..:/app
+      - node_modules:/app/node_modules
+      - workers-logs:/root/.pm2/logs
+
+  # Ďalší pm2 kontajner sa pridáva takto: nový ecosystem config v
+  # `docker/ecosystem/`, nová služba, vlastný profil. Ten istý image, bez buildu.
+  #
+  # pm2-imports:
+  #   <<: *app
+  #   profiles: ["imports"]
+  #   container_name: pm2-imports
+  #   command: ["pm2-runtime", "start", "docker/ecosystem/imports.config.cjs"]
+  #   volumes:
+  #     - ..:/app
+  #     - node_modules:/app/node_modules
+  #     - imports-logs:/root/.pm2/logs
+
+networks:
+  # Spoločná sieť projektu. Pomenovaná natvrdo, aby sa do nej dala neskôr
+  # pripojiť aj CouchDB z inej compose:
+  #
+  #   networks:
+  #     default:
+  #       external: true
+  #       name: network_dosledujto
+  default:
+    name: network_dosledujto
+
+  # Sieť, v ktorej beží CouchDB. Docker rozlišuje mená kontajnerov **len
+  # v rámci spoločnej siete** — bez tohto skončí `COUCH_URL` na meno kontajnera
+  # chybou `EAI_AGAIN`.
+  #
+  # Typické nastavenie: CouchDB je v `docker-networks_network_couch`
+  # (spravuje ju samostatná compose `docker-networks`). Ak sa to inde volá inak,
+  # netreba meniť tento súbor — stačí `COUCH_NETWORK` v `docker/.env`:
+  #
+  #   docker inspect -f '{{range $$k,$$v := .NetworkSettings.Networks}}{{$$k}} {{end}}' <kontajner>
+  couch:
+    external: true
+    name: ${COUCH_NETWORK:-docker-networks_network_couch}
+
+volumes:
+  # Linuxové závislosti. Po zmene package.json: `docker compose down -v` alebo
+  # `docker volume rm dosledujto_node_modules`, potom rebuild.
+  node_modules:
+  api-admin-logs:
+  workers-logs:
+  # imports-logs:

@@ -1,0 +1,59 @@
+dosleduj.to
+
+projekt ma sluzit an monitorovanie kauz v spolocnosti, a hlavne ich dosledovanie ked zmiznu s titulky
+
+1. zoznam kauz otvorene, uzavrete
+	- ludia a ich role v kauze a status 9SVEDOK, OBZALOVANY0
+	- popis kazuy
+	- sudne procesy 
+	- timeline co bude nasledovat
+	- ludia a prekliky na dalsie kazuy a naviazanei na politicke strany
+	- linky na clanky o kauze
+	- o aku susmu sa jedna ak sa jeda o kradez penazi alebo spreneveru resp. nadhodnotenu zakazku
+
+2. zoznam ludi
+	- vsade  kde sa vyskytuju a ich role
+	- previazania na kazuy a ludi s pol. strany
+	- zoznam kauz a clankov 
+
+3. prihlasenie (free) kde si zvolim dostavat update o kauzach ktore ma zaujimaju 
+
+4. editacia, 
+	- admin udajov aby sa dalo updatovat
+	- prava prihlasenych niekto sa moze stat moderator dat
+	- kazdy moze napisat ziadot o zmenu udajov v kazue lebo su nepresne
+
+ako na to
+	- ma zbierat clanky z medii a parsovat ich a na zaklade nich updatovat kazu a ludi
+
+
+
+backend
+
+
+stack: nodejs, express, couchdb
+
+api,
+	/,
+
+	/kazy?filter
+		/kauza:id
+
+	/persons:?filter
+		/person:id
+
+	/login	
+	/logout
+	/register
+	/profile
+
+admin
+	/,
+	/kazy?filter
+		/kauza:id
+
+	/persons:?filter
+		/person:id
+
+	/login	
+	/logout

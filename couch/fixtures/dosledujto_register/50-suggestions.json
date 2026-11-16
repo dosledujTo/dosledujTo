@@ -1,0 +1,95 @@
+[
+  {
+    "_id": "suggestion:0192a1b0-7c0a-7000-8000-000000000001",
+    "type": "suggestion",
+    "origin": "user",
+    "author_id": "user:0192a1b0-7c0c-7000-8000-000000000003",
+    "submitter_email": null,
+    "target": {
+      "type": "case",
+      "id": "case:0192a1b0-7c05-7000-8000-000000000001",
+      "path": "amount"
+    },
+    "proposed_value": { "value": 980000000, "unit": "EUR" },
+    "current_value_snapshot": { "value": 1250000000, "unit": "EUR" },
+    "source_urls": ["https://denniskuska.example/2024/03/obvinenie-v-kauze-testovacieho-mosta"],
+    "comment": "Polícia uvádza nižšiu sumu než kontrola. Podľa mňa má byť uvedená ako sporná hodnota.",
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "review_note": null,
+    "created_at": "2026-08-05T18:22:00Z",
+    "updated_at": "2026-08-05T18:22:00Z"
+  },
+  {
+    "_id": "suggestion:0192a1b0-7c0a-7000-8000-000000000002",
+    "type": "suggestion",
+    "origin": "bot",
+    "author_id": null,
+    "submitter_email": null,
+    "target": {
+      "type": "case",
+      "id": "case:0192a1b0-7c05-7000-8000-000000000003",
+      "path": null
+    },
+    "proposed_value": {
+      "title": "Kauza Vzorkové pozemky",
+      "person_ids": ["person:0192a1b0-7c03-7000-8000-000000000002"],
+      "note": "Zhoda na meno v článku; automatika navrhuje, moderátor potvrdzuje."
+    },
+    "current_value_snapshot": null,
+    "source_urls": ["https://denniskuska.example/2026/08/pozemky-v-testoviciach-zmenili-majitela"],
+    "comment": "Nový koncept založený matcherom z článku so zhodou na existujúcu osobu.",
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "review_note": null,
+    "confidence": 0.62,
+    "created_at": "2026-08-01T06:12:00Z",
+    "updated_at": "2026-08-01T06:12:00Z"
+  },
+  {
+    "_id": "suggestion:0192a1b0-7c0a-7000-8000-000000000003",
+    "type": "suggestion",
+    "origin": "user",
+    "author_id": null,
+    "submitter_email": "citatel@example.test",
+    "target": {
+      "type": "person",
+      "id": "person:0192a1b0-7c03-7000-8000-000000000002",
+      "path": "short_bio"
+    },
+    "proposed_value": {
+      "value": "Riaditeľka odboru dotácií na Mestskom úrade Testovice; v novembri 2025 ju súd v kauze Skúšobné dotácie oslobodil."
+    },
+    "current_value_snapshot": {
+      "value": "Riaditeľka odboru dotácií na Mestskom úrade Testovice; obžalovaná v kauze Skúšobné dotácie."
+    },
+    "source_urls": ["https://vzorovenoviny.example/sud-oslobodil-skusobnu"],
+    "comment": "Rozsudok je právoplatný, profil to nezohľadňuje.",
+    "status": "accepted",
+    "reviewed_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "reviewed_at": "2026-08-07T09:05:00Z",
+    "review_note": "Prijaté bez úpravy, doplnený zdroj.",
+    "created_at": "2026-08-06T20:41:00Z",
+    "updated_at": "2026-08-07T09:05:00Z"
+  },
+  {
+    "_id": "suggestion:0192a1b0-7c0a-7000-8000-000000000004",
+    "type": "suggestion",
+    "origin": "user",
+    "author_id": null,
+    "submitter_email": "anonym@example.test",
+    "target": { "type": "case", "id": null, "path": null },
+    "proposed_value": null,
+    "current_value_snapshot": null,
+    "source_urls": ["https://skuska.example/clanky/nova-kauza-testovice"],
+    "comment": "Návrh na založenie novej kauzy — obstarávanie IT služieb na Mestskom úrade Testovice.",
+    "status": "needs_info",
+    "reviewed_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "reviewed_at": "2026-08-07T09:10:00Z",
+    "review_note": "Jeden zdroj nestačí na založenie kauzy, prosím o doplnenie.",
+    "created_at": "2026-08-07T07:55:00Z",
+    "updated_at": "2026-08-07T09:10:00Z"
+  }
+]

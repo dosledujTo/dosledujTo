@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Dosleduj.to — stránka kauzy" description="Case dossier page: key figures with conflicting sources, a timeline crossing today, proceedings, sources and people." -->
+<helmet><script src="./ds-base.js"></script><style>:root{--paper:#f3f2f2;--ink:#201f1d;--gold:#b68235;--gold-ink:#7d5411;--tag-bg:#ffe3bf;--tag-ink:#5a3b0a;--tagn-bg:#eae7e7;--tagn-ink:#444141;--colophon:#221f1c;--colophon-ink:#e8e4de}[data-theme="dark"]{--paper:#1b1a18;--ink:#eae7e2;--gold:#d3a35d;--gold-ink:#e1ad66;--tag-bg:#4a3413;--tag-ink:#facb8d;--tagn-bg:#2f2c2a;--tagn-ink:#cfcac4;--colophon:#131211;--colophon-ink:#e8e4de}body{margin:0;transition:background .2s ease,color .2s ease;background:var(--paper);color:var(--ink);font-family:"Lora",Georgia,serif}a{color:var(--gold-ink)}a:hover{color:var(--gold)}.tnum{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}</style></helmet>
+<div style="min-height:100vh;background:var(--paper)">
+<header style="display:flex;align-items:baseline;gap:28px;padding:16px 40px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<a href="#" style="text-decoration:none;color:var(--ink);display:flex;align-items:baseline;gap:10px;margin-right:auto"><span style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;letter-spacing:-0.01em">Dosleduj.to</span><span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 55%,transparent)">Verejná pamäť káuz</span></a>
+<nav style="display:flex;gap:22px;align-items:center"><a href="#" style="font-size:13px;letter-spacing:0.04em;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:2px">Kauzy</a><a href="#" style="font-size:13px;letter-spacing:0.04em;text-decoration:none;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:2px">Ľudia</a></nav><button type="button" onClick="{{ toggleTheme }}" style="display:flex;align-items:center;gap:6px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:12px;letter-spacing:0.04em;cursor:pointer;background:transparent;color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:4px;padding:6px 12px">{{ themeLabel }}</button>
+<form style="display:flex"><input placeholder="Hľadať" style="font:inherit;font-size:13px;width:150px;padding:6px 10px;background:transparent;color:var(--ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-right:0;border-radius:4px 0 0 4px"><button style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;padding:6px 12px;cursor:pointer;background:transparent;color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:0 4px 4px 0">Hľadať</button></form>
+</header>
+
+<main id="obsah" style="max-width:1120px;margin:0 auto;padding:0 40px 72px">
+<nav style="padding:20px 0 0;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 50%,transparent)"><a href="#" style="text-decoration:none;color:var(--gold-ink)">Kauzy</a> &nbsp;/&nbsp; Kauza Testovací most</nav><button type="button" onClick="{{ toggleTheme }}" style="display:flex;align-items:center;gap:6px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:12px;letter-spacing:0.04em;cursor:pointer;background:transparent;color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:4px;padding:6px 12px">{{ themeLabel }}</button>
+
+<section style="padding:24px 0 36px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end">
+<div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:16px"><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--tag-ink);background:var(--tag-bg);border-radius:3px;padding:3px 8px">otvorená</span><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent);border:1px solid color-mix(in srgb,var(--ink) 24%,transparent);border-radius:3px;padding:3px 8px">obžaloba</span><span style="font-size:11px;color:color-mix(in srgb,var(--ink) 45%,transparent)">verejné obstarávanie · doprava · samospráva</span></div>
+<h1 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:58px;line-height:1.03;letter-spacing:-0.02em;margin:0 0 20px">Kauza Testovací most</h1>
+<p style="margin:0;max-width:60ch;font-size:16px;line-height:1.65;text-align:justify;hyphens:auto;color:color-mix(in srgb,var(--ink) 84%,transparent)">Rekonštrukcia mosta v Testoviciach mala podľa kontroly stáť o milióny viac, než zodpovedalo rozsahu prác. Zákazku získala spoločnosť TestBuild s.r.o. ako jediný uchádzač. Vyšetrovanie sa začalo vo februári 2024, obvinenie padlo v marci 2024.</p>
+</div>
+<aside style="border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding-left:32px">
+<div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 50%,transparent);margin-bottom:14px">Najbližší termín</div>
+<div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:34px;line-height:1;margin-bottom:6px">15. septembra 2026</div>
+<div style="font-size:13px;color:color-mix(in srgb,var(--ink) 70%,transparent)">Hlavné pojednávanie · Okresný súd Testovice</div>
+<div style="margin-top:20px;padding-top:16px;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);display:flex;gap:24px">
+<div><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-size:22px">4</div><div style="font-size:11px;color:color-mix(in srgb,var(--ink) 55%,transparent)">zdroje</div></div>
+<div><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-size:22px">4</div><div style="font-size:11px;color:color-mix(in srgb,var(--ink) 55%,transparent)">ľudia</div></div>
+<div><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-size:22px">1</div><div style="font-size:11px;color:color-mix(in srgb,var(--ink) 55%,transparent)">konanie</div></div>
+</div>
+</aside>
+</section>
+
+<section style="padding:40px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;margin:0 0 24px">Kľúčové údaje</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<div style="padding:22px 28px 22px 0;border-right:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 55%,transparent);margin-bottom:10px">O akú sumu ide</div>
+<div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:36px;line-height:1;margin-bottom:12px">12 500 000 €</div>
+<a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">Testoviny.sk · 2024</a>
+</div>
+<div style="padding:22px 28px;border-right:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px"><span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 55%,transparent)">Iný zdroj uvádza</span><span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold);border-radius:3px;padding:2px 6px">sporné</span></div>
+<div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:36px;line-height:1;margin-bottom:12px;color:color-mix(in srgb,var(--ink) 60%,transparent)">9 800 000 €</div>
+<a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">Denník Skúška · 2024</a>
+</div>
+<div style="padding:22px 0 22px 28px">
+<div style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 55%,transparent);margin-bottom:10px">Fáza konania</div>
+<div style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:36px;line-height:1;margin-bottom:12px">obžaloba</div>
+<a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">§ Okresný súd Testovice · 2025</a>
+</div>
+</div>
+</section>
+
+<section style="padding:40px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start">
+<div><h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;margin:0 0 8px">Čo sa dialo<br>a čo sa chystá</h2><p style="font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--ink) 60%,transparent);margin:0">Minulé aj očakávané udalosti v jednom prúde. Termíny pod čiarou „dnes“ ešte len prídu.</p></div>
+<ol style="list-style:none;margin:0;padding:0 0 0 28px;border-left:1px solid color-mix(in srgb,var(--ink) 20%,transparent)">
+<li style="position:relative;padding:0 0 30px"><span style="position:absolute;left:-33px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:1px solid color-mix(in srgb,var(--ink) 45%,transparent)"></span><div class="tnum" style="font-size:12px;letter-spacing:0.06em;color:var(--gold-ink);margin-bottom:4px">28. februára 2024</div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;margin-bottom:4px">Kontrola zistila predraženie zákazky</div><p style="margin:0 0 8px;max-width:62ch;font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--ink) 75%,transparent)">Kontrolné zistenie o rozdiele medzi rozsahom prác a fakturovanou sumou.</p><a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">Testoviny.sk · 2024</a></li>
+<li style="position:relative;padding:0 0 30px"><span style="position:absolute;left:-33px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:1px solid color-mix(in srgb,var(--ink) 45%,transparent)"></span><div class="tnum" style="font-size:12px;letter-spacing:0.06em;color:var(--gold-ink);margin-bottom:4px">11. marca 2024</div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;margin-bottom:4px">Vznesenie obvinenia</div><p style="margin:0 0 8px;max-width:62ch;font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--ink) 75%,transparent)">Vyšetrovateľ vzniesol obvinenie v súvislosti so zákazkou na rekonštrukciu mosta.</p><a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">Denník Skúška · 2024</a></li>
+<li style="position:relative;padding:0 0 30px"><span style="position:absolute;left:-33px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--ink)"></span><div class="tnum" style="font-size:12px;letter-spacing:0.06em;color:var(--gold-ink);margin-bottom:4px">20. januára 2025</div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;margin-bottom:4px">Podanie obžaloby na Okresný súd Testovice</div><p style="margin:0 0 8px;max-width:62ch;font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--ink) 75%,transparent)">Vec vedená pod sp. zn. 2T/45/2025.</p><a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">§ Okresný súd Testovice · 2025</a></li>
+<li style="position:relative;padding:0 0 28px;display:flex;align-items:center;gap:14px"><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink)">dnes</span><span style="flex:1;height:1px;background:var(--ink)"></span></li>
+<li style="position:relative;padding:0"><span style="position:absolute;left:-33px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:1px dashed var(--gold)"></span><div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px"><span class="tnum" style="font-size:12px;letter-spacing:0.06em;color:var(--gold-ink)">15. septembra 2026</span><span style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold);border-radius:3px;padding:2px 6px">očakávané</span></div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;margin-bottom:4px">Hlavné pojednávanie</div><p style="margin:0 0 8px;max-width:62ch;font-size:14px;line-height:1.6;color:color-mix(in srgb,var(--ink) 75%,transparent)">Termín určený súdom.</p><a href="#" style="font-size:12px;color:var(--gold-ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--gold) 40%,transparent)">Testoviny.sk · 2026</a></li>
+</ol>
+</section>
+
+<div style="display:grid;grid-template-columns:1.4fr 1fr;gap:56px;padding:40px 0 0;align-items:start">
+<div>
+<h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;margin:0 0 6px">Zdroje</h2>
+<p style="margin:0 0 20px;font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--ink) 60%,transparent);max-width:56ch">Všetko na tejto stránke pochádza odtiaľto. Pri rozpore má prednosť úradný dokument.</p>
+<ol class="tnum" style="list-style:none;margin:0;padding:0;counter-reset:src">
+<li style="counter-increment:src;display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);padding-top:2px">01</span><span><a href="#" style="font-size:15px;line-height:1.45;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Uznesenie o podaní obžaloby, sp. zn. 2T/45/2025</a><span style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:5px;font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent)">Okresný súd Testovice · 20. 1. 2025<span style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tag-ink);background:var(--tag-bg);border-radius:3px;padding:2px 7px">úradný dokument</span><a href="#" style="color:var(--gold-ink);text-decoration:none">archív</a></span></span></li>
+<li style="counter-increment:src;display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);padding-top:2px">02</span><span><a href="#" style="font-size:15px;line-height:1.45;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Pojednávanie v kauze mosta je určené na september</a><span style="display:block;margin-top:5px;font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent)">Testoviny.sk · 12. 6. 2026</span></span></li>
+<li style="counter-increment:src;display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);padding-top:2px">03</span><span><a href="#" style="font-size:15px;line-height:1.45;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">V kauze testovacieho mosta padlo obvinenie</a><span style="display:block;margin-top:5px;font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent)">Denník Skúška · 11. 3. 2024</span></span></li>
+<li style="counter-increment:src;display:grid;grid-template-columns:28px 1fr;gap:12px;padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);padding-top:2px">04</span><span><a href="#" style="font-size:15px;line-height:1.45;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Most v Testoviciach mal byť predražený o milióny, tvrdí kontrola</a><span style="display:flex;gap:8px;align-items:center;margin-top:5px;font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent)">Testoviny.sk · 28. 2. 2024<a href="#" style="color:var(--gold-ink);text-decoration:none">archív</a></span></span></li>
+</ol>
+</div>
+<aside>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;margin:0 0 12px">Ľudia v kauze</h3>
+<ul style="list-style:none;margin:0 0 32px;padding:0">
+<li style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><a href="#" style="font-size:15px;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Ján Testovací</a><span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tag-ink);background:var(--tag-bg);border-radius:3px;padding:2px 7px">obžalovaný</span></li>
+<li style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><a href="#" style="font-size:15px;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Eva Skúšobná</a><span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent)">svedok</span></li>
+<li style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><a href="#" style="font-size:15px;color:var(--ink);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)">Peter Vzorka</a><span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent)">vyšetrovateľ</span></li>
+</ul>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;margin:0 0 12px">Súdne konania</h3>
+<div style="padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);margin-bottom:32px"><div class="tnum" style="font-size:15px">Okresný súd Testovice</div><div class="tnum" style="font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:3px">sp. zn. 2T/45/2025 · súdne konanie</div></div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;margin:0 0 8px">Niečo tu nesedí?</h3>
+<p style="margin:0 0 14px;font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--ink) 70%,transparent)">Podnet na opravu môže poslať ktokoľvek — musí ale obsahovať odkaz na zdroj.</p>
+<a href="#" style="display:inline-block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:14px;text-decoration:none;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:9px 18px">Poslať podnet</a>
+</aside>
+</div>
+</main>
+
+<footer style="background:var(--colophon);color:var(--colophon-ink);padding:44px 40px">
+<div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:56px"><div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;margin-bottom:10px">Dosleduj.to</div><p style="margin:0;font-size:13px;line-height:1.65;color:rgba(232,228,222,0.72)">Evidujeme kauzy na Slovensku a to, ako pokračujú aj potom, čo o nich médiá prestanú písať.</p></div><p style="margin:0;font-size:13px;line-height:1.65;color:rgba(232,228,222,0.72)">Pri každom údaji je uvedený zdroj. Údaj bez zdroja sa nezverejňuje. Platí prezumpcia neviny: podozrivý, obvinený a obžalovaný nie sú odsúdení.</p></div>
+</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;dark&quot;],&quot;default&quot;:&quot;light&quot;,&quot;tsType&quot;:&quot;'light' | 'dark'&quot;,&quot;section&quot;:&quot;Vzhľad&quot;}}">
+class Component extends DCLogic {
+  state = { dark: false };
+  componentDidMount() {
+    const d = (localStorage.getItem('dosleduj-theme') || (this.props.defaultTheme === 'dark' ? 'dark' : 'light')) === 'dark';
+    document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
+    this.setState({ dark: d });
+  }
+  toggle = () => {
+    const d = !this.state.dark;
+    localStorage.setItem('dosleduj-theme', d ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
+    this.setState({ dark: d });
+  };
+  renderVals() {
+    return { toggleTheme: this.toggle, themeLabel: this.state.dark ? 'Svetlý režim' : 'Tmavý režim' };
+  }
+}
+</script>
+</body>
+</html>

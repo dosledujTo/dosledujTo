@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Administrácia — Register káuz</title>
+    <script>
+      /*
+       * Téma sa musí nastaviť pred prvým vykreslením, inak na tmavom režime
+       * blikne biele pozadie. Preto obyčajný inline skript, nie React.
+       * Kľúč aj atribút sú tie isté ako v `src/theme.jsx`.
+       */
+      (function () {
+        try {
+          var stored = localStorage.getItem("dosleduj-admin-theme");
+          var dark = stored
+            ? stored === "dark"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-bs-theme", dark ? "dark" : "light");
+        } catch (e) {
+          /* Okno bez úložiska — zostane svetlý režim. */
+        }
+      })();
+    </script>
+  </head>
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

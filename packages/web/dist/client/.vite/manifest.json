@@ -1,0 +1,20 @@
+{
+  "../../node_modules/d3-force/src/index.js": {
+    "file": "assets/src-jtXfH6vz.js",
+    "name": "src",
+    "src": "../../node_modules/d3-force/src/index.js",
+    "isDynamicEntry": true
+  },
+  "index.html": {
+    "file": "assets/index-D7HiAqSN.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "../../node_modules/d3-force/src/index.js"
+    ],
+    "css": [
+      "assets/index-CbB3mXqj.css"
+    ]
+  }
+}

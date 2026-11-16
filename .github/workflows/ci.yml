@@ -1,0 +1,78 @@
+# CI pre dosleduj.to.
+#
+#   validate — design dokumenty sa dajú zostaviť (couchman validate) a commitnuté
+#              fixtures sú výstup deterministického generátora,
+#   dist     — commitnutý packages/{web,admin}/dist zodpovedá zdrojom (dist je
+#              v gite, server ho nestavia),
+#   test     — celé testy proti čerstvej CouchDB 3.5 s Clouseau; databáza aj
+#              testovací kontajner žijú len počas jobu.
+#
+# Nasadenie tu nie je — docker/README.md, „CI".
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run couch:validate
+      - run: node couch/fixtures/generate.js
+      # Generátor je deterministický: commitnuté fixtures musia byť jeho výstup.
+      - run: git diff --exit-code couch/fixtures || (echo "::error::fixtures nesedia s generate.js — spusti npm run couch:generate" && exit 1)
+
+  dist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run web:build
+      - run: npm run admin:build
+      # Zastaraný dist = stará stránka po nasadení.
+      - run: |
+          git status --porcelain packages/web/dist packages/admin/dist
+          test -z "$(git status --porcelain packages/web/dist packages/admin/dist)" || (echo "::error::dist nesedí so zdrojmi — spusti npm run web:build a admin:build a commitni" && exit 1)
+
+  test:
+    runs-on: ubuntu-latest
+    env:
+      CI_PROJECT: dosleduj-ci
+    steps:
+      - uses: actions/checkout@v4
+      - name: CouchDB 3.5 + Clouseau
+        run: |
+          echo "CI_COUCH_PASSWORD=$(openssl rand -hex 18)" >> "$GITHUB_ENV"
+          echo "CI_COUCH_COOKIE=$(openssl rand -hex 18)" >> "$GITHUB_ENV"
+      - run: docker compose -p "$CI_PROJECT" -f ci/couch.compose.yaml up -d --wait couchdb
+      - run: docker compose -p "$CI_PROJECT" -f ci/couch.compose.yaml up -d clouseau
+      - run: docker build -q -f ci/test.Dockerfile -t "$CI_PROJECT:test" .
+      - name: npm test
+        run: >
+          docker run --rm --network "container:$CI_PROJECT-couchdb-1"
+          -e COUCH_URL=http://127.0.0.1:5984 -e COUCH_USER=admin -e COUCH_PASSWORD="$CI_COUCH_PASSWORD"
+          -e COUCH_DB=dosledujto_register
+          "$CI_PROJECT:test" sh ci/test.sh
+      - name: Logy CouchDB a Clouseau
+        if: failure()
+        run: docker compose -p "$CI_PROJECT" -f ci/couch.compose.yaml logs --tail 200

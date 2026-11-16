@@ -1,0 +1,184 @@
+[
+  {
+    "_id": "case:0192a1b0-7c05-7000-8000-000000000001",
+    "type": "case",
+    "title": "Kauza Testovací most",
+    "slug": "kauza-testovaci-most",
+    "summary": {
+      "value": "Rekonštrukcia mosta v Testoviciach mala podľa kontroly stáť o milióny viac, než zodpovedalo rozsahu prác. Zákazku získala spoločnosť TestBuild s.r.o. ako jediný uchádzač. Vyšetrovanie sa začalo vo februári 2024, obvinenie padlo v marci 2024.",
+      "sources": [
+        "article:0192a1b0-7c02-7000-8000-000000000001",
+        "article:0192a1b0-7c02-7000-8000-000000000002"
+      ],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-11"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000003"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-01-20"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000003"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-01-20"
+    },
+    "amount": {
+      "value": 1250000000,
+      "unit": "EUR",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [
+        {
+          "value": 980000000,
+          "sources": ["article:0192a1b0-7c02-7000-8000-000000000002"]
+        }
+      ],
+      "asserted_at": "2024-02-28"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-02-28"
+    },
+    "related_case_ids": {
+      "value": ["case:0192a1b0-7c05-7000-8000-000000000002"],
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "started_on": "2024-02-28",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie", "doprava", "samosprava"],
+    "person_ids": [
+      "person:0192a1b0-7c03-7000-8000-000000000001",
+      "person:0192a1b0-7c03-7000-8000-000000000002",
+      "person:0192a1b0-7c03-7000-8000-000000000003"
+    ],
+    "party_ids": ["org:0192a1b0-7c04-7000-8000-000000000001"],
+    "publish_state": "published",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:30:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "case:0192a1b0-7c05-7000-8000-000000000002",
+    "type": "case",
+    "title": "Kauza Skúšobné dotácie",
+    "slug": "kauza-skusobne-dotacie",
+    "summary": {
+      "value": "Mesto Testovice rozdelilo dotácie na športovú infraštruktúru bez zverejnenej výzvy. Obžalovaná bola riaditeľka odboru dotácií; v novembri 2025 ju súd oslobodil.",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "phase": {
+      "value": "acquitted",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "amount": {
+      "value": 89000000,
+      "unit": "EUR",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-02"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "started_on": "2023-05-02",
+    "closed_on": "2025-11-04",
+    "tags": ["dotacie", "samosprava"],
+    "person_ids": ["person:0192a1b0-7c03-7000-8000-000000000002"],
+    "party_ids": [],
+    "publish_state": "published",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:20:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "case:0192a1b0-7c05-7000-8000-000000000003",
+    "type": "case",
+    "title": "Kauza Vzorkové pozemky",
+    "slug": "kauza-vzorkove-pozemky",
+    "summary": {
+      "value": "Koncept založený automatickým spracovaním článku: pozemky v Testoviciach mali zmeniť majiteľa pod cenou. Nespracované, čaká na moderátora.",
+      "sources": [],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": null
+    },
+    "status": {
+      "value": "open",
+      "sources": [],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": null
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": [],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": null
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": [],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": null
+    },
+    "started_on": "2026-08-01",
+    "closed_on": null,
+    "tags": ["pozemky"],
+    "person_ids": [],
+    "party_ids": [],
+    "publish_state": "draft",
+    "created_at": "2026-08-01T06:12:00Z",
+    "updated_at": "2026-08-01T06:12:00Z",
+    "created_by": "worker:matcher",
+    "updated_by": "worker:matcher"
+  }
+]

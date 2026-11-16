@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Samostatný repozitár s obrazom CouchDB + Clouseau (nie je súčasťou projektu)
+docker/couchdb-3-with-cluseau/

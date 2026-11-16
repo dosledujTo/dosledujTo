@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "link:0192a1b0-7c09-7000-8000-000000000001",
+    "type": "link",
+    "from_id": "person:0192a1b0-7c03-7000-8000-000000000001",
+    "to_id": "org:0192a1b0-7c04-7000-8000-000000000001",
+    "kind": "member",
+    "valid_from": "2018-01-01",
+    "valid_to": null,
+    "sources": ["article:0192a1b0-7c02-7000-8000-000000000001"],
+    "derived": false,
+    "derivation": null,
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "link:0192a1b0-7c09-7000-8000-000000000002",
+    "type": "link",
+    "from_id": "person:0192a1b0-7c03-7000-8000-000000000001",
+    "to_id": "org:0192a1b0-7c04-7000-8000-000000000002",
+    "kind": "statutory",
+    "valid_from": "2019-03-01",
+    "valid_to": "2024-01-31",
+    "sources": ["article:0192a1b0-7c02-7000-8000-000000000001"],
+    "derived": true,
+    "derivation": "Odvodené z výpisu z obchodného registra: konateľ zapísaný 1. 3. 2019, výmaz 31. 1. 2024. Tvrdenie je naše, nie prevzaté z článku (produktové zadanie §5.10).",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "link:0192a1b0-7c09-7000-8000-000000000003",
+    "type": "link",
+    "from_id": "person:0192a1b0-7c03-7000-8000-000000000002",
+    "to_id": "org:0192a1b0-7c04-7000-8000-000000000003",
+    "kind": "other",
+    "valid_from": "2016-09-01",
+    "valid_to": null,
+    "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+    "derived": false,
+    "derivation": null,
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  }
+]

@@ -1,0 +1,484 @@
+[
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000001",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000019",
+    "court": "Okresný súd Testovice",
+    "file_number": "8T/88/2024",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000670"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000081",
+      "person:0193b000-7c03-7000-8000-000000000091"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000002",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000020",
+    "court": "Okresný súd Testovice",
+    "file_number": "3T/50/2021",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000706"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000055",
+      "person:0193b000-7c03-7000-8000-000000000083"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000003",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000021",
+    "court": "Krajský súd Testovice",
+    "file_number": "1T/28/2023",
+    "phase": "trial",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000731"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000297",
+      "person:0193b000-7c03-7000-8000-000000000224"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000004",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000022",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "2T/39/2024",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000744"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000126",
+      "person:0193b000-7c03-7000-8000-000000000287"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000005",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000023",
+    "court": "Krajský súd Testovice",
+    "file_number": "2T/51/2022",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000755"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000242",
+      "person:0193b000-7c03-7000-8000-000000000166"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000006",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000024",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "1T/29/2021",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000813"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000185",
+      "person:0193b000-7c03-7000-8000-000000000177"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000007",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000025",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "6T/32/2024",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000878"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000032",
+      "person:0193b000-7c03-7000-8000-000000000215"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000008",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000026",
+    "court": "Okresný súd Testovice",
+    "file_number": "8T/18/2023",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000900"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000072",
+      "person:0193b000-7c03-7000-8000-000000000078"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000009",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000027",
+    "court": "Krajský súd Testovice",
+    "file_number": "5T/13/2020",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000937"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000175",
+      "person:0193b000-7c03-7000-8000-000000000018"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000010",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000028",
+    "court": "Krajský súd Testovice",
+    "file_number": "2T/71/2025",
+    "phase": "convicted",
+    "decisions": [
+      {
+        "decided_on": "2025-12-29",
+        "outcome": "conviction",
+        "summary": "Súd uznal obžalovaných vinnými.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000000963"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000954"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000060",
+      "person:0193b000-7c03-7000-8000-000000000281"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000011",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000029",
+    "court": "Okresný súd Testovice",
+    "file_number": "6T/26/2023",
+    "phase": "convicted",
+    "decisions": [
+      {
+        "decided_on": "2024-03-22",
+        "outcome": "conviction",
+        "summary": "Súd uznal obžalovaných vinnými.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001006"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000000993"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000097",
+      "person:0193b000-7c03-7000-8000-000000000049"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000012",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000030",
+    "court": "Krajský súd Testovice",
+    "file_number": "7T/48/2025",
+    "phase": "convicted",
+    "decisions": [
+      {
+        "decided_on": "2026-09-15",
+        "outcome": "conviction",
+        "summary": "Súd uznal obžalovaných vinnými.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001046"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000221",
+      "person:0193b000-7c03-7000-8000-000000000017"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000013",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000031",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "6T/30/2023",
+    "phase": "convicted",
+    "decisions": [
+      {
+        "decided_on": "2025-05-29",
+        "outcome": "conviction",
+        "summary": "Súd uznal obžalovaných vinnými.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001074"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001054"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000040",
+      "person:0193b000-7c03-7000-8000-000000000112"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000014",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000032",
+    "court": "Krajský súd Testovice",
+    "file_number": "5T/95/2021",
+    "phase": "convicted",
+    "decisions": [
+      {
+        "decided_on": "2023-12-29",
+        "outcome": "conviction",
+        "summary": "Súd uznal obžalovaných vinnými.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001087"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001084"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000064",
+      "person:0193b000-7c03-7000-8000-000000000125"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000015",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000033",
+    "court": "Okresný súd Testovice",
+    "file_number": "1T/21/2022",
+    "phase": "acquitted",
+    "decisions": [
+      {
+        "decided_on": "2026-05-26",
+        "outcome": "acquittal",
+        "summary": "Súd obžalovaných oslobodil.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001115"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001135"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000118",
+      "person:0193b000-7c03-7000-8000-000000000317"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000016",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000034",
+    "court": "Okresný súd Testovice",
+    "file_number": "5T/62/2025",
+    "phase": "acquitted",
+    "decisions": [
+      {
+        "decided_on": "2026-06-27",
+        "outcome": "acquittal",
+        "summary": "Súd obžalovaných oslobodil.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001156"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001165"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000307",
+      "person:0193b000-7c03-7000-8000-000000000193"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000017",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000035",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "5T/21/2024",
+    "phase": "acquitted",
+    "decisions": [
+      {
+        "decided_on": "2025-06-27",
+        "outcome": "acquittal",
+        "summary": "Súd obžalovaných oslobodil.",
+        "final": true,
+        "sources": ["article:0193b000-7c02-7000-8000-000000001214"]
+      }
+    ],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001213"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000289",
+      "person:0193b000-7c03-7000-8000-000000000222"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000018",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000042",
+    "court": "Krajský súd Testovice",
+    "file_number": "4T/78/2022",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001419"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000272",
+      "person:0193b000-7c03-7000-8000-000000000132"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000019",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000043",
+    "court": "Okresný súd Testovice",
+    "file_number": "4T/89/2023",
+    "phase": "appeal",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001429"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000168",
+      "person:0193b000-7c03-7000-8000-000000000256"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000020",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000045",
+    "court": "Špecializovaný trestný súd Skúšobný",
+    "file_number": "7T/50/2023",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001487"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000083",
+      "person:0193b000-7c03-7000-8000-000000000046"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000021",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000046",
+    "court": "Okresný súd Testovice",
+    "file_number": "5T/24/2023",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001540"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000153",
+      "person:0193b000-7c03-7000-8000-000000000196"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0193b000-7c08-7000-8000-000000000022",
+    "type": "proceeding",
+    "case_id": "case:0193b000-7c05-7000-8000-000000000047",
+    "court": "Krajský súd Testovice",
+    "file_number": "6T/84/2023",
+    "phase": "indictment",
+    "decisions": [],
+    "sources": ["article:0193b000-7c02-7000-8000-000000001565"],
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000155",
+      "person:0193b000-7c03-7000-8000-000000000036"
+    ],
+    "org_ids": [],
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  }
+]

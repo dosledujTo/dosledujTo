@@ -1,0 +1,50 @@
+# CouchDB 3.5 + Clouseau pre testy v CI — rovnaké usporiadanie ako testovacie
+# prostredie (docker/README.md): Clouseau zdieľa sieťový priestor CouchDB, takže
+# sa nájdu na 127.0.0.1. Projekt (`-p`) určuje pipeline, aby sa dva behy
+# nebili o mená kontajnerov ani o dáta. Heslo je jednorazové, len pre tento beh.
+
+services:
+  couchdb:
+    image: couchdb:3.5.3
+    environment:
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: ${CI_COUCH_PASSWORD:?}
+      COUCHDB_ERLANG_COOKIE: ${CI_COUCH_COOKIE:?}
+      NODENAME: 127.0.0.1
+    configs:
+      - source: couchdb-ini
+        target: /opt/couchdb/etc/local.d/10-ci.ini
+    tmpfs:
+      - /opt/couchdb/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:5984/_up"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+      start_period: 5s
+
+  clouseau:
+    image: ghcr.io/cloudant-labs/clouseau:3.5.0
+    network_mode: "service:couchdb"
+    depends_on:
+      couchdb:
+        condition: service_healthy
+    environment:
+      JAVA_XMX: 512M
+      JAVA_XMS: 128M
+    secrets:
+      - source: erlang-cookie
+        target: erlang.cookie
+
+configs:
+  couchdb-ini:
+    content: |
+      [couchdb]
+      single_node = true
+
+      [dreyfus]
+      name = clouseau@127.0.0.1
+
+secrets:
+  erlang-cookie:
+    environment: CI_COUCH_COOKIE

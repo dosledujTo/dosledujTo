@@ -1,0 +1,29 @@
+{
+  "default_analyzer": "standard",
+  "analyzer": {
+    "name": "perfield",
+    "default": "standard",
+    "fields": {
+      "type": "keyword",
+      "publish_state": "keyword",
+      "slug": "keyword",
+      "status": "keyword",
+      "phase": "keyword",
+      "case_kind": "keyword",
+      "kind_main": "keyword",
+      "has_impact": "keyword",
+      "has_kind": "keyword",
+      "kind_list": "keyword",
+      "impact_unit": "keyword",
+      "tag": "keyword",
+      "kind": "keyword",
+      "ico": "keyword",
+      "person_id": "keyword",
+      "party_id": "keyword",
+      "moderator_id": "keyword",
+      "has_moderator": "keyword",
+      "has_amount": "keyword",
+      "has_unsourced": "keyword"
+    }
+  }
+}

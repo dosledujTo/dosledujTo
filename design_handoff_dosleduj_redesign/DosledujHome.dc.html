@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Dosleduj.to — titulná strana" description="Editorial front page for a public register of cases: masthead, figure rail, upcoming dates, case entries." -->
+<helmet><script src="./ds-base.js"></script><style>:root{--paper:#f3f2f2;--ink:#201f1d;--gold:#b68235;--gold-ink:#7d5411;--tag-bg:#ffe3bf;--tag-ink:#5a3b0a;--tagn-bg:#eae7e7;--tagn-ink:#444141;--colophon:#221f1c;--colophon-ink:#e8e4de}[data-theme="dark"]{--paper:#1b1a18;--ink:#eae7e2;--gold:#d3a35d;--gold-ink:#e1ad66;--tag-bg:#4a3413;--tag-ink:#facb8d;--tagn-bg:#2f2c2a;--tagn-ink:#cfcac4;--colophon:#131211;--colophon-ink:#e8e4de}body{margin:0;transition:background .2s ease,color .2s ease;background:var(--paper);color:var(--ink);font-family:"Lora",Georgia,serif}a{color:var(--gold-ink)}a:hover{color:var(--gold)}.tnum{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}</style></helmet>
+<div style="min-height:100vh;background:var(--paper)">
+<header style="display:flex;align-items:baseline;gap:28px;padding:16px 40px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<a href="#" style="text-decoration:none;color:var(--ink);display:flex;align-items:baseline;gap:10px;margin-right:auto"><span style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;letter-spacing:-0.01em">Dosleduj.to</span><span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 55%,transparent)">Verejná pamäť káuz</span></a>
+<nav style="display:flex;gap:22px;align-items:center"><a href="#" style="font-size:13px;letter-spacing:0.04em;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:2px">Kauzy</a><a href="#" style="font-size:13px;letter-spacing:0.04em;text-decoration:none;color:var(--ink);border-bottom:1px solid transparent;padding-bottom:2px">Ľudia</a></nav><button type="button" onClick="{{ toggleTheme }}" style="display:flex;align-items:center;gap:6px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:12px;letter-spacing:0.04em;cursor:pointer;background:transparent;color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:4px;padding:6px 12px">{{ themeLabel }}</button>
+<form style="display:flex;gap:0"><input class="tnum" placeholder="Hľadať" style="font:inherit;font-size:13px;width:150px;padding:6px 10px;background:transparent;color:var(--ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-right:0;border-radius:4px 0 0 4px"><button style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;padding:6px 12px;cursor:pointer;background:transparent;color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-radius:0 4px 4px 0">Hľadať</button></form>
+</header>
+
+<main id="obsah" style="max-width:1120px;margin:0 auto;padding:0 40px">
+<section style="padding:64px 0 40px;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">
+<div>
+<div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:20px">Register káuz na Slovensku</div>
+<h1 style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:66px;line-height:1.02;letter-spacing:-0.02em;margin:0 0 24px;text-wrap:pretty">Kauzy nezmiznú len preto,<br>že o nich prestali písať</h1>
+<p style="max-width:52ch;font-size:16px;line-height:1.62;text-align:justify;hyphens:auto;margin:0 0 28px;color:color-mix(in srgb,var(--ink) 82%,transparent)">Jedna stránka na kauzu. Kto v nej figuruje, koľko peňazí je v hre, v akej fáze je súd a čo bude nasledovať. Pri každom údaji je uvedené, odkiaľ pochádza.</p>
+<form style="display:flex;gap:8px;max-width:460px"><input placeholder="Hľadať kauzu alebo meno" style="font:inherit;font-size:14px;flex:1;padding:9px 12px;background:transparent;color:var(--ink);border:1px solid color-mix(in srgb,var(--ink) 30%,transparent);border-radius:4px"><button style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:14px;padding:9px 20px;cursor:pointer;background:transparent;color:var(--gold);border:1px solid var(--gold);border-radius:4px">Hľadať</button></form>
+</div>
+<aside style="border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding-left:32px">
+<div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 50%,transparent);padding-bottom:14px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">Stav registra</div>
+<div style="display:grid;grid-template-columns:1fr 1fr">
+<div style="padding:18px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-right:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:40px;line-height:1">2</div><div style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:4px">evidovaných káuz</div></div>
+<div style="padding:18px 0 18px 18px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:40px;line-height:1">3</div><div style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:4px">ľudí v kauzách</div></div>
+<div style="padding:18px 0;border-right:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:40px;line-height:1">77</div><div style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:4px">zdrojov</div></div>
+<div style="padding:18px 0 18px 18px"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:29px;line-height:1.1;color:var(--gold-ink)">13 390 000 €</div><div style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:4px">v hre — súčet súm so zdrojom</div></div>
+</div>
+</aside>
+</section>
+
+<sc-if value="{{ showUpcoming }}" hint-placeholder-val="{{ true }}">
+<section style="padding:44px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);display:grid;grid-template-columns:260px 1fr;gap:56px">
+<div><h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:28px;margin:0 0 8px">Čo sa chystá</h2><p style="font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--ink) 60%,transparent);margin:0">Termíny, ktoré už sú známe. Toto je to, čo sa z médií dozviete náhodne — ak vôbec.</p></div>
+<ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0">
+<li style="display:grid;grid-template-columns:132px 1fr auto;gap:24px;align-items:baseline;padding:16px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><span class="tnum" style="font-size:12px;letter-spacing:0.06em;color:var(--gold-ink)">15. 9. 2026</span><span><a href="#" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;text-decoration:none;color:var(--ink)">Hlavné pojednávanie</a><span style="display:block;font-size:12px;color:color-mix(in srgb,var(--ink) 60%,transparent);margin-top:2px">Kauza Testovací most · Okresný súd Testovice</span></span><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold);border-radius:3px;padding:3px 8px">očakávané</span></li>
+</ol>
+</section>
+</sc-if>
+
+<section style="padding:48px 0 8px;display:flex;align-items:baseline;gap:20px;justify-content:space-between"><h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:28px;margin:0">Naposledy doplnené</h2><a href="#" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--gold-ink)">Všetky kauzy →</a></section>
+<ul style="list-style:none;margin:0;padding:0">
+<li style="border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding:26px 0;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start">
+<div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:9px"><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--tag-ink);background:var(--tag-bg);border-radius:3px;padding:3px 8px">otvorená</span><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent);border:1px solid color-mix(in srgb,var(--ink) 24%,transparent);border-radius:3px;padding:3px 8px">obžaloba</span><span style="font-size:11px;color:color-mix(in srgb,var(--ink) 45%,transparent)">verejné obstarávanie · doprava · samospráva</span></div>
+<h3 style="margin:0 0 8px"><a href="#" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:27px;line-height:1.14;letter-spacing:-0.01em;text-decoration:none;color:var(--ink)">Kauza Testovací most</a></h3>
+<p style="margin:0;max-width:64ch;font-size:14px;line-height:1.62;text-align:justify;hyphens:auto;color:color-mix(in srgb,var(--ink) 78%,transparent)">Rekonštrukcia mosta v Testoviciach mala podľa kontroly stáť o milióny viac, než zodpovedalo rozsahu prác. Zákazku získala spoločnosť TestBuild s.r.o. ako jediný uchádzač. Vyšetrovanie sa začalo vo februári 2024.</p>
+</div>
+<div style="text-align:right;border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding-left:24px"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:31px;line-height:1">12 500 000 €</div><div style="font-size:11px;color:color-mix(in srgb,var(--ink) 55%,transparent);margin-top:6px">suma, o ktorú ide</div><div style="font-size:11px;color:var(--gold-ink);margin-top:14px">3 zdroje · naposledy 6/2026</div></div>
+</li>
+<li style="border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding:26px 0;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start">
+<div>
+<div style="display:flex;gap:8px;align-items:center;margin-bottom:9px"><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--tagn-ink);background:var(--tagn-bg);border-radius:3px;padding:3px 8px">uzavretá</span><span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:color-mix(in srgb,var(--ink) 60%,transparent);border:1px solid color-mix(in srgb,var(--ink) 24%,transparent);border-radius:3px;padding:3px 8px">oslobodené</span><span style="font-size:11px;color:color-mix(in srgb,var(--ink) 45%,transparent)">dotácie · samospráva</span></div>
+<h3 style="margin:0 0 8px"><a href="#" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:27px;line-height:1.14;letter-spacing:-0.01em;text-decoration:none;color:var(--ink)">Kauza Skúšobné dotácie</a></h3>
+<p style="margin:0;max-width:64ch;font-size:14px;line-height:1.62;text-align:justify;hyphens:auto;color:color-mix(in srgb,var(--ink) 78%,transparent)">Mesto Testovice rozdelilo dotácie na športovú infraštruktúru bez zverejnenej výzvy. Obžalovaná bola riaditeľka odboru dotácií; v novembri 2025 ju súd oslobodil.</p>
+</div>
+<div style="text-align:right;border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent);padding-left:24px"><div class="tnum" style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:31px;line-height:1">890 000 €</div><div style="font-size:11px;color:color-mix(in srgb,var(--ink) 55%,transparent);margin-top:6px">suma, o ktorú ide</div><div style="font-size:11px;color:var(--gold-ink);margin-top:14px">4 zdroje · naposledy 11/2025</div></div>
+</li>
+</ul>
+
+<section style="padding:52px 0 64px;display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start">
+<div><h2 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:28px;margin:0 0 8px">Najväčšie sumy</h2><p style="font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--ink) 60%,transparent);margin:0">Podľa objemu peňazí, o ktorý v kauze ide. Počítame len sumy, ktoré majú zdroj.</p></div>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr><th style="text-align:left;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;color:color-mix(in srgb,var(--ink) 55%,transparent);padding:0 0 10px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">Kauza</th><th style="text-align:left;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;color:color-mix(in srgb,var(--ink) 55%,transparent);padding:0 0 10px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">Fáza</th><th style="text-align:right;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;color:color-mix(in srgb,var(--ink) 55%,transparent);padding:0 0 10px;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)">Suma</th></tr></thead>
+<tbody>
+<tr><td style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><a href="#" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--ink)">Kauza Testovací most</a></td><td style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);font-size:12px;color:color-mix(in srgb,var(--ink) 65%,transparent)">obžaloba</td><td class="tnum" style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);text-align:right;font-size:16px">12 500 000 €</td></tr>
+<tr><td style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)"><a href="#" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;text-decoration:none;color:var(--ink)">Kauza Skúšobné dotácie</a></td><td style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);font-size:12px;color:color-mix(in srgb,var(--ink) 65%,transparent)">oslobodené</td><td class="tnum" style="padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);text-align:right;font-size:16px">890 000 €</td></tr>
+</tbody>
+</table>
+</section>
+</main>
+
+<footer style="background:var(--colophon);color:var(--colophon-ink);padding:56px 40px 44px">
+<div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:56px;align-items:start">
+<div><div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;margin-bottom:10px">Dosleduj.to</div><p style="margin:0;font-size:13px;line-height:1.65;color:rgba(232,228,222,0.72)">Evidujeme kauzy na Slovensku a to, ako pokračujú aj potom, čo o nich médiá prestanú písať.</p></div>
+<div><div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#e1ad66;margin-bottom:12px">Pravidlá</div><p style="margin:0;font-size:13px;line-height:1.65;color:rgba(232,228,222,0.72)">Pri každom údaji je uvedený zdroj. Údaj bez zdroja sa nezverejňuje. Platí prezumpcia neviny: podozrivý, obvinený a obžalovaný nie sú odsúdení.</p></div>
+<div><div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#e1ad66;margin-bottom:12px">Oprava</div><p style="margin:0 0 14px;font-size:13px;line-height:1.65;color:rgba(232,228,222,0.72)">Našli ste nepresnosť? Na stránke kauzy je formulár na podnet — <em>s odkazom na zdroj</em>.</p><a href="#" style="display:inline-block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;text-decoration:none;color:#e1ad66;border:1px solid #e1ad66;border-radius:4px;padding:8px 16px">Poslať podnet</a></div>
+</div>
+</footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showUpcoming&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcie&quot;},&quot;defaultTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;dark&quot;],&quot;default&quot;:&quot;light&quot;,&quot;tsType&quot;:&quot;'light' | 'dark'&quot;,&quot;section&quot;:&quot;Vzhľad&quot;}}">
+class Component extends DCLogic {
+  state = { dark: false };
+  componentDidMount() {
+    const d = (localStorage.getItem('dosleduj-theme') || (this.props.defaultTheme === 'dark' ? 'dark' : 'light')) === 'dark';
+    document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
+    this.setState({ dark: d });
+  }
+  toggle = () => {
+    const d = !this.state.dark;
+    localStorage.setItem('dosleduj-theme', d ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
+    this.setState({ dark: d });
+  };
+  renderVals() {
+    return {
+      showUpcoming: this.props.showUpcoming ?? true,
+      toggleTheme: this.toggle,
+      themeLabel: this.state.dark ? 'Svetlý režim' : 'Tmavý režim'
+    };
+  }
+}
+</script>
+</body>
+</html>

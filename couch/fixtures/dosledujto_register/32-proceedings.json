@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "proceeding:0192a1b0-7c08-7000-8000-000000000001",
+    "type": "proceeding",
+    "case_id": "case:0192a1b0-7c05-7000-8000-000000000001",
+    "court": "Okresný súd Testovice",
+    "file_number": "2T/45/2025",
+    "phase": "trial",
+    "decisions": [],
+    "sources": ["article:0192a1b0-7c02-7000-8000-000000000003"],
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "proceeding:0192a1b0-7c08-7000-8000-000000000002",
+    "type": "proceeding",
+    "case_id": "case:0192a1b0-7c05-7000-8000-000000000002",
+    "court": "Krajský súd Testovice",
+    "file_number": "5To/12/2025",
+    "phase": "acquitted",
+    "decisions": [
+      {
+        "decided_on": "2025-11-04",
+        "outcome": "acquittal",
+        "summary": "Odvolanie prokurátora zamietnuté, oslobodzujúci rozsudok potvrdený.",
+        "final": true,
+        "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"]
+      }
+    ],
+    "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:20:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  }
+]

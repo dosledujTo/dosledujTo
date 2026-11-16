@@ -1,0 +1,3273 @@
+[
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000001",
+    "type": "case",
+    "title": "Kauza Nemocnica Overovice",
+    "slug": "kauza-nemocnica-overovice",
+    "summary": {
+      "value": "Nemocnica Overovice — kauza okolo inštitúcie Úrad pre pokusy a spoločnosti VzorTrade s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-20"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000011"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-07-11"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-20"
+    },
+    "amount": {
+      "value": 3669900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-20"
+    },
+    "started_on": "2023-02-20",
+    "closed_on": null,
+    "tags": ["samosprava", "doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000299",
+      "person:0193b000-7c03-7000-8000-000000000210",
+      "person:0193b000-7c03-7000-8000-000000000017",
+      "person:0193b000-7c03-7000-8000-000000000196",
+      "person:0193b000-7c03-7000-8000-000000000301",
+      "person:0193b000-7c03-7000-8000-000000000012",
+      "person:0193b000-7c03-7000-8000-000000000113",
+      "person:0193b000-7c03-7000-8000-000000000004"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000006",
+      "org:0193b000-7c04-7000-8000-000000000004"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000002",
+    "type": "case",
+    "title": "Kauza Diaľnica Vzorovce",
+    "slug": "kauza-dialnica-vzorovce",
+    "summary": {
+      "value": "Diaľnica Vzorovce — kauza okolo inštitúcie Inšpektorát Modelov a spoločnosti VzorAgro a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000026"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-06-13"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000052"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-17"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000026"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-06-13"
+    },
+    "amount": {
+      "value": 18095100000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000026"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-06-13"
+    },
+    "started_on": "2020-06-13",
+    "closed_on": null,
+    "tags": ["doprava", "dotacie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000231",
+      "person:0193b000-7c03-7000-8000-000000000298",
+      "person:0193b000-7c03-7000-8000-000000000020"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000004"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000003",
+    "type": "case",
+    "title": "Kauza Tender na IT systém Skúšobné",
+    "slug": "kauza-tender-na-it-system-skusobne",
+    "summary": {
+      "value": "Tender na IT systém Skúšobné — kauza okolo inštitúcie Samosprávny kraj Testovický a spoločnosti TestLogistic s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000074"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-03-05"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000091"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-05-29"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000074"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-03-05"
+    },
+    "amount": {
+      "value": 15927200000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000074"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-03-05"
+    },
+    "started_on": "2020-03-05",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie", "pozemky"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000282",
+      "person:0193b000-7c03-7000-8000-000000000287",
+      "person:0193b000-7c03-7000-8000-000000000063",
+      "person:0193b000-7c03-7000-8000-000000000109",
+      "person:0193b000-7c03-7000-8000-000000000306",
+      "person:0193b000-7c03-7000-8000-000000000047",
+      "person:0193b000-7c03-7000-8000-000000000309"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000006",
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000004",
+    "type": "case",
+    "title": "Kauza Dotácie pre farmy Cvičná Ves",
+    "slug": "kauza-dotacie-pre-farmy-cvicna-ves",
+    "summary": {
+      "value": "Dotácie pre farmy Cvičná Ves — kauza okolo inštitúcie Obec Vzorovce a spoločnosti CvičData s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000097"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-12-11"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000099"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-09"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000097"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-12-11"
+    },
+    "amount": {
+      "value": 5032100000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000097"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-12-11"
+    },
+    "started_on": "2019-12-11",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000019",
+      "person:0193b000-7c03-7000-8000-000000000316",
+      "person:0193b000-7c03-7000-8000-000000000196",
+      "person:0193b000-7c03-7000-8000-000000000140",
+      "person:0193b000-7c03-7000-8000-000000000255"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000006",
+      "org:0193b000-7c04-7000-8000-000000000008"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000005",
+    "type": "case",
+    "title": "Kauza Pozemky pri meste Ukážkovo",
+    "slug": "kauza-pozemky-pri-meste-ukazkovo",
+    "summary": {
+      "value": "Pozemky pri meste Ukážkovo — kauza okolo inštitúcie Ministerstvo skúšobníctva a spoločnosti VzorGroup s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-27"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000138"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-25"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-27"
+    },
+    "amount": {
+      "value": 20163400000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [
+        {
+          "value": 10672335600,
+          "sources": ["article:0193b000-7c02-7000-8000-000000000143"]
+        }
+      ],
+      "asserted_at": "2021-02-27"
+    },
+    "started_on": "2021-02-27",
+    "closed_on": null,
+    "tags": ["pozemky"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000118",
+      "person:0193b000-7c03-7000-8000-000000000313"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000006",
+    "type": "case",
+    "title": "Kauza Eurofondy Skúšobné",
+    "slug": "kauza-eurofondy-skusobne",
+    "summary": {
+      "value": "Eurofondy Skúšobné — kauza okolo inštitúcie Ministerstvo skúšobníctva a spoločnosti CvičConsult a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000152"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-02-28"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000178"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-21"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000167"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-03"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000152"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-02-28"
+    },
+    "amount": {
+      "value": 20223000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000152"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-02-28"
+    },
+    "started_on": "2022-02-28",
+    "closed_on": null,
+    "tags": ["pozemky"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000197",
+      "person:0193b000-7c03-7000-8000-000000000286",
+      "person:0193b000-7c03-7000-8000-000000000244",
+      "person:0193b000-7c03-7000-8000-000000000292",
+      "person:0193b000-7c03-7000-8000-000000000005"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000005"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000007",
+    "type": "case",
+    "title": "Kauza Nákup sanitiek Vzorovce",
+    "slug": "kauza-nakup-sanitiek-vzorovce",
+    "summary": {
+      "value": "Nákup sanitiek Vzorovce — kauza okolo inštitúcie Úrad pre verejné skúšky a spoločnosti UkážkInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000210"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-11-12"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000213"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-01-03"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000217"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-13"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000210"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-11-12"
+    },
+    "amount": {
+      "value": 6757000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000210"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-11-12"
+    },
+    "started_on": "2023-11-12",
+    "closed_on": null,
+    "tags": ["doprava", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000178",
+      "person:0193b000-7c03-7000-8000-000000000318",
+      "person:0193b000-7c03-7000-8000-000000000056",
+      "person:0193b000-7c03-7000-8000-000000000257",
+      "person:0193b000-7c03-7000-8000-000000000190",
+      "person:0193b000-7c03-7000-8000-000000000092",
+      "person:0193b000-7c03-7000-8000-000000000003"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000003"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000008",
+    "type": "case",
+    "title": "Kauza Obchvat Testovice",
+    "slug": "kauza-obchvat-testovice",
+    "summary": {
+      "value": "Obchvat Testovice — kauza okolo inštitúcie Inšpektorát Modelov a spoločnosti VzorTrade s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000219"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-25"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000275"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-10"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000238"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-01-14"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000219"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-25"
+    },
+    "amount": {
+      "value": 7557100000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000219"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-25"
+    },
+    "started_on": "2022-11-25",
+    "closed_on": null,
+    "tags": ["dotacie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000128",
+      "person:0193b000-7c03-7000-8000-000000000123",
+      "person:0193b000-7c03-7000-8000-000000000076",
+      "person:0193b000-7c03-7000-8000-000000000313",
+      "person:0193b000-7c03-7000-8000-000000000096"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000002",
+      "org:0193b000-7c04-7000-8000-000000000005"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000009",
+    "type": "case",
+    "title": "Kauza Kotolňa Overovice",
+    "slug": "kauza-kotolna-overovice",
+    "summary": {
+      "value": "Kotolňa Overovice — kauza okolo inštitúcie Fond modelových dotácií a spoločnosti CvičGroup s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000278"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-09"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000330"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-01"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000322"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-10"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000278"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-09"
+    },
+    "amount": {
+      "value": 5917000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000278"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-09"
+    },
+    "started_on": "2020-02-09",
+    "closed_on": null,
+    "tags": ["pozemky", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000285",
+      "person:0193b000-7c03-7000-8000-000000000063",
+      "person:0193b000-7c03-7000-8000-000000000220",
+      "person:0193b000-7c03-7000-8000-000000000139",
+      "person:0193b000-7c03-7000-8000-000000000243",
+      "person:0193b000-7c03-7000-8000-000000000236"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000008",
+      "org:0193b000-7c04-7000-8000-000000000007"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000010",
+    "type": "case",
+    "title": "Kauza Štadión Pokusov",
+    "slug": "kauza-stadion-pokusov",
+    "summary": {
+      "value": "Štadión Pokusov — kauza okolo inštitúcie Obec Vzorovce a spoločnosti PokusTrade s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000336"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-04-21"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000348"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-20"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000345"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-04-23"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000336"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-04-21"
+    },
+    "amount": {
+      "value": 945400000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000336"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [
+        {
+          "value": 798984700,
+          "sources": ["article:0193b000-7c02-7000-8000-000000000345"]
+        }
+      ],
+      "asserted_at": "2024-04-21"
+    },
+    "started_on": "2024-04-21",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000227",
+      "person:0193b000-7c03-7000-8000-000000000204"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000007"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000011",
+    "type": "case",
+    "title": "Kauza Zimná údržba Ukážkovo",
+    "slug": "kauza-zimna-udrzba-ukazkovo",
+    "summary": {
+      "value": "Zimná údržba Ukážkovo — kauza okolo inštitúcie Fond modelových dotácií a spoločnosti VzorData s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000355"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-05"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000361"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-30"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000360"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-05-15"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000355"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-05"
+    },
+    "amount": {
+      "value": 26226700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000355"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-02-05"
+    },
+    "started_on": "2020-02-05",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000293",
+      "person:0193b000-7c03-7000-8000-000000000091",
+      "person:0193b000-7c03-7000-8000-000000000215",
+      "person:0193b000-7c03-7000-8000-000000000290",
+      "person:0193b000-7c03-7000-8000-000000000310",
+      "person:0193b000-7c03-7000-8000-000000000097"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000003",
+      "org:0193b000-7c04-7000-8000-000000000001",
+      "org:0193b000-7c04-7000-8000-000000000002"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000012",
+    "type": "case",
+    "title": "Kauza Dodávky liekov Overovice",
+    "slug": "kauza-dodavky-liekov-overovice",
+    "summary": {
+      "value": "Dodávky liekov Overovice — kauza okolo inštitúcie Inšpektorát Modelov a spoločnosti OverovMed s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000396"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-05"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000398"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-09-11"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000399"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-05-23"
+    },
+    "kind": {
+      "value": ["public_money", "abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000396"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-05"
+    },
+    "amount": {
+      "value": 12689700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000396"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-05"
+    },
+    "started_on": "2021-02-05",
+    "closed_on": null,
+    "tags": ["doprava", "verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000131",
+      "person:0193b000-7c03-7000-8000-000000000124",
+      "person:0193b000-7c03-7000-8000-000000000270",
+      "person:0193b000-7c03-7000-8000-000000000302"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000008"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000013",
+    "type": "case",
+    "title": "Kauza Školské tablety Skúšobné",
+    "slug": "kauza-skolske-tablety-skusobne",
+    "summary": {
+      "value": "Školské tablety Skúšobné — kauza okolo inštitúcie Samosprávny kraj Testovický a spoločnosti UkážkAgro a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000400"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-16"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000409"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-08-30"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000416"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-15"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000400"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-16"
+    },
+    "amount": {
+      "value": 9719800000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000400"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-11-16"
+    },
+    "started_on": "2022-11-16",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000259",
+      "person:0193b000-7c03-7000-8000-000000000212",
+      "person:0193b000-7c03-7000-8000-000000000186",
+      "person:0193b000-7c03-7000-8000-000000000040",
+      "person:0193b000-7c03-7000-8000-000000000002"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000007",
+      "org:0193b000-7c04-7000-8000-000000000002"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000014",
+    "type": "case",
+    "title": "Kauza Rekonštrukcia úradu Skúšobné",
+    "slug": "kauza-rekonstrukcia-uradu-skusobne",
+    "summary": {
+      "value": "Rekonštrukcia úradu Skúšobné — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti SkúšStav s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000418"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-03"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000461"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-20"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000449"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-31"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000418"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-03"
+    },
+    "amount": {
+      "value": 36513800000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000418"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-03"
+    },
+    "started_on": "2022-07-03",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000158",
+      "person:0193b000-7c03-7000-8000-000000000192",
+      "person:0193b000-7c03-7000-8000-000000000319",
+      "person:0193b000-7c03-7000-8000-000000000165",
+      "person:0193b000-7c03-7000-8000-000000000137",
+      "person:0193b000-7c03-7000-8000-000000000302",
+      "person:0193b000-7c03-7000-8000-000000000160"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000004",
+      "org:0193b000-7c04-7000-8000-000000000001"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000015",
+    "type": "case",
+    "title": "Kauza Lesy Príkladovce",
+    "slug": "kauza-lesy-prikladovce",
+    "summary": {
+      "value": "Lesy Príkladovce — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti PokusInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000476"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-03-03"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000495"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-07"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000505"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-03-06"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000476"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-03-03"
+    },
+    "amount": {
+      "value": 12406300000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000476"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-03-03"
+    },
+    "started_on": "2021-03-03",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000158",
+      "person:0193b000-7c03-7000-8000-000000000113"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000016",
+    "type": "case",
+    "title": "Kauza Parkovací systém Skúšobné",
+    "slug": "kauza-parkovaci-system-skusobne",
+    "summary": {
+      "value": "Parkovací systém Skúšobné — kauza okolo inštitúcie Správa ciest Testovice a spoločnosti UkážkHolding a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000516"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-25"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000523"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-09-21"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000545"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-08-04"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000516"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-25"
+    },
+    "amount": {
+      "value": 31857900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000516"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-25"
+    },
+    "started_on": "2022-07-25",
+    "closed_on": null,
+    "tags": ["dotacie", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000183",
+      "person:0193b000-7c03-7000-8000-000000000194",
+      "person:0193b000-7c03-7000-8000-000000000136",
+      "person:0193b000-7c03-7000-8000-000000000094",
+      "person:0193b000-7c03-7000-8000-000000000127",
+      "person:0193b000-7c03-7000-8000-000000000134"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000001",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000017",
+    "type": "case",
+    "title": "Kauza Skládka Cvičná Ves",
+    "slug": "kauza-skladka-cvicna-ves",
+    "summary": {
+      "value": "Skládka Cvičná Ves — kauza okolo inštitúcie Krajský úrad Pokusov a spoločnosti ModelEnergy a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000555"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-24"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000564"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-08"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000558"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-27"
+    },
+    "kind": {
+      "value": ["public_money", "abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000555"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-24"
+    },
+    "amount": {
+      "value": 5518600000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000555"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-24"
+    },
+    "started_on": "2019-08-24",
+    "closed_on": null,
+    "tags": ["pozemky", "doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000264",
+      "person:0193b000-7c03-7000-8000-000000000009",
+      "person:0193b000-7c03-7000-8000-000000000129"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000006"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000018",
+    "type": "case",
+    "title": "Kauza Mestská doprava Vzorovce",
+    "slug": "kauza-mestska-doprava-vzorovce",
+    "summary": {
+      "value": "Mestská doprava Vzorovce — kauza okolo inštitúcie Fond modelových dotácií a spoločnosti TestData s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000575"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-22"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000616"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-12"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000584"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-08-10"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000575"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-22"
+    },
+    "amount": {
+      "value": 26209700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000575"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-22"
+    },
+    "started_on": "2023-07-22",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000197",
+      "person:0193b000-7c03-7000-8000-000000000112",
+      "person:0193b000-7c03-7000-8000-000000000026",
+      "person:0193b000-7c03-7000-8000-000000000125",
+      "person:0193b000-7c03-7000-8000-000000000093",
+      "person:0193b000-7c03-7000-8000-000000000319"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000004"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000019",
+    "type": "case",
+    "title": "Kauza Energetický podnik Príkladovce",
+    "slug": "kauza-energeticky-podnik-prikladovce",
+    "summary": {
+      "value": "Energetický podnik Príkladovce — kauza okolo inštitúcie Štátny podnik Vzorové lesy a spoločnosti CvičTrade a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000633"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-04-03"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000657"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-01"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000670"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-04-08"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000633"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-04-03"
+    },
+    "amount": {
+      "value": 17756900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000633"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-04-03"
+    },
+    "started_on": "2023-04-03",
+    "closed_on": null,
+    "tags": ["pozemky"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000081",
+      "person:0193b000-7c03-7000-8000-000000000091",
+      "person:0193b000-7c03-7000-8000-000000000223",
+      "person:0193b000-7c03-7000-8000-000000000003"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000020",
+    "type": "case",
+    "title": "Kauza Nájomné byty Testovice",
+    "slug": "kauza-najomne-byty-testovice",
+    "summary": {
+      "value": "Nájomné byty Testovice — kauza okolo inštitúcie Samosprávny kraj Testovický a spoločnosti TestLogistic s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000673"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-21"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000701"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-05-06"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000706"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-09-02"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000673"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-21"
+    },
+    "amount": {
+      "value": 9723700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000673"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-08-21"
+    },
+    "started_on": "2019-08-21",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000055",
+      "person:0193b000-7c03-7000-8000-000000000083",
+      "person:0193b000-7c03-7000-8000-000000000125",
+      "person:0193b000-7c03-7000-8000-000000000271",
+      "person:0193b000-7c03-7000-8000-000000000032"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000001"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000021",
+    "type": "case",
+    "title": "Kauza Kamerový systém Cvičná Ves",
+    "slug": "kauza-kamerovy-system-cvicna-ves",
+    "summary": {
+      "value": "Kamerový systém Cvičná Ves — kauza okolo inštitúcie Mesto Testovice a spoločnosti SkúšBuild s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000723"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-17"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000738"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-06-26"
+    },
+    "phase": {
+      "value": "trial",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000731"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-05-08"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000723"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-17"
+    },
+    "amount": {
+      "value": 36152300000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000723"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-17"
+    },
+    "started_on": "2022-03-17",
+    "closed_on": null,
+    "tags": ["samosprava", "dotacie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000297",
+      "person:0193b000-7c03-7000-8000-000000000224",
+      "person:0193b000-7c03-7000-8000-000000000131"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000008"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000022",
+    "type": "case",
+    "title": "Kauza Očkovacie centrum Šablónovo",
+    "slug": "kauza-ockovacie-centrum-sablonovo",
+    "summary": {
+      "value": "Očkovacie centrum Šablónovo — kauza okolo inštitúcie Ústav Príkladov a spoločnosti SkúšInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000739"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-24"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000741"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-07-06"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000744"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-09-13"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000739"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-24"
+    },
+    "amount": {
+      "value": 7165600000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000739"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [
+        {
+          "value": 5285988500,
+          "sources": ["article:0193b000-7c02-7000-8000-000000000744"]
+        }
+      ],
+      "asserted_at": "2023-05-24"
+    },
+    "started_on": "2023-05-24",
+    "closed_on": null,
+    "tags": ["pozemky", "doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000126",
+      "person:0193b000-7c03-7000-8000-000000000287"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000008",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000023",
+    "type": "case",
+    "title": "Kauza Čistička Vzorovce",
+    "slug": "kauza-cisticka-vzorovce",
+    "summary": {
+      "value": "Čistička Vzorovce — kauza okolo inštitúcie Obec Vzorovce a spoločnosti ŠablónHolding s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000748"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-06-18"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000782"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-02-05"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000755"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-06-18"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000748"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-06-18"
+    },
+    "amount": {
+      "value": 33748900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000748"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-06-18"
+    },
+    "started_on": "2021-06-18",
+    "closed_on": null,
+    "tags": ["doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000242",
+      "person:0193b000-7c03-7000-8000-000000000166",
+      "person:0193b000-7c03-7000-8000-000000000165",
+      "person:0193b000-7c03-7000-8000-000000000102"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000024",
+    "type": "case",
+    "title": "Kauza Prístav Skúšobné",
+    "slug": "kauza-pristav-skusobne",
+    "summary": {
+      "value": "Prístav Skúšobné — kauza okolo inštitúcie Polícia Vzorová a spoločnosti CvičBuild s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000799"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-04-25"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000815"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-09-14"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000813"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-10-10"
+    },
+    "kind": {
+      "value": ["public_money", "abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000799"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-04-25"
+    },
+    "amount": {
+      "value": 26361600000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000799"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-04-25"
+    },
+    "recovered_amount": {
+      "value": 8612124600,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000813"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2020-10-10"
+    },
+    "started_on": "2020-04-25",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000185",
+      "person:0193b000-7c03-7000-8000-000000000177",
+      "person:0193b000-7c03-7000-8000-000000000016",
+      "person:0193b000-7c03-7000-8000-000000000125",
+      "person:0193b000-7c03-7000-8000-000000000202",
+      "person:0193b000-7c03-7000-8000-000000000045",
+      "person:0193b000-7c03-7000-8000-000000000247"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000001"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000025",
+    "type": "case",
+    "title": "Kauza Letisko Cvičná Ves",
+    "slug": "kauza-letisko-cvicna-ves",
+    "summary": {
+      "value": "Letisko Cvičná Ves — kauza okolo inštitúcie Štátny podnik Vzorové lesy a spoločnosti CvičStav a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000838"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-06-06"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000854"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-26"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000878"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-14"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000838"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-06-06"
+    },
+    "amount": {
+      "value": 36919100000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000838"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-06-06"
+    },
+    "started_on": "2023-06-06",
+    "closed_on": null,
+    "tags": ["dotacie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000032",
+      "person:0193b000-7c03-7000-8000-000000000215",
+      "person:0193b000-7c03-7000-8000-000000000022",
+      "person:0193b000-7c03-7000-8000-000000000001"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000001",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000026",
+    "type": "case",
+    "title": "Kauza Opravy ciest Overovice",
+    "slug": "kauza-opravy-ciest-overovice",
+    "summary": {
+      "value": "Opravy ciest Overovice — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti ŠablónConsult a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000885"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-07"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000904"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-05-18"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000900"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-30"
+    },
+    "kind": {
+      "value": ["public_money", "conflict_of_interest"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000885"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-07"
+    },
+    "amount": {
+      "value": 9639500000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000885"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-07"
+    },
+    "started_on": "2022-06-07",
+    "closed_on": null,
+    "tags": ["dotacie", "verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000072",
+      "person:0193b000-7c03-7000-8000-000000000078"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000027",
+    "type": "case",
+    "title": "Kauza Vodovod Šablónovo",
+    "slug": "kauza-vodovod-sablonovo",
+    "summary": {
+      "value": "Vodovod Šablónovo — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti ModelEnergy s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000909"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-07-28"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000918"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-12-06"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000937"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-07-30"
+    },
+    "kind": {
+      "value": ["public_money", "conflict_of_interest"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000909"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-07-28"
+    },
+    "amount": {
+      "value": 33796200000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000909"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-07-28"
+    },
+    "recovered_amount": {
+      "value": 7904261700,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000937"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-07-30"
+    },
+    "started_on": "2019-07-28",
+    "closed_on": null,
+    "tags": ["dotacie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000175",
+      "person:0193b000-7c03-7000-8000-000000000018",
+      "person:0193b000-7c03-7000-8000-000000000271",
+      "person:0193b000-7c03-7000-8000-000000000122",
+      "person:0193b000-7c03-7000-8000-000000000240",
+      "person:0193b000-7c03-7000-8000-000000000081",
+      "person:0193b000-7c03-7000-8000-000000000197"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000028",
+    "type": "case",
+    "title": "Kauza Sociálne služby Pokusov",
+    "slug": "kauza-socialne-sluzby-pokusov",
+    "summary": {
+      "value": "Sociálne služby Pokusov — kauza okolo inštitúcie Kontrolný úrad Testovice a spoločnosti VzorEnergy a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000942"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-13"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000963"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-14"
+    },
+    "phase": {
+      "value": "convicted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000954"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-18"
+    },
+    "kind": {
+      "value": ["public_money", "abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000942"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-13"
+    },
+    "amount": {
+      "value": 26902700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000942"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-13"
+    },
+    "recovered_amount": {
+      "value": 10521439000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000954"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-18"
+    },
+    "started_on": "2023-12-13",
+    "closed_on": "2025-12-29",
+    "tags": ["verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000060",
+      "person:0193b000-7c03-7000-8000-000000000281"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000004",
+      "org:0193b000-7c04-7000-8000-000000000001"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000029",
+    "type": "case",
+    "title": "Kauza Kúpalisko Skúšobné",
+    "slug": "kauza-kupalisko-skusobne",
+    "summary": {
+      "value": "Kúpalisko Skúšobné — kauza okolo inštitúcie Správa Overovacieho majetku a spoločnosti ŠablónTrade s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000998"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-21"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001006"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-02-28"
+    },
+    "phase": {
+      "value": "convicted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000993"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-03-03"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000000998"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-21"
+    },
+    "amount": {
+      "value": 4614900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000998"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-21"
+    },
+    "recovered_amount": {
+      "value": 650019200,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000000993"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-03-03"
+    },
+    "started_on": "2022-03-21",
+    "closed_on": "2024-03-22",
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000097",
+      "person:0193b000-7c03-7000-8000-000000000049",
+      "person:0193b000-7c03-7000-8000-000000000039",
+      "person:0193b000-7c03-7000-8000-000000000281",
+      "person:0193b000-7c03-7000-8000-000000000116"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000008",
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000001"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000030",
+    "type": "case",
+    "title": "Kauza Konzultačné zmluvy Modelovo",
+    "slug": "kauza-konzultacne-zmluvy-modelovo",
+    "summary": {
+      "value": "Konzultačné zmluvy Modelovo — kauza okolo inštitúcie Samosprávny kraj Testovický a spoločnosti ModelHolding s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-10"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001046"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-08-15"
+    },
+    "phase": {
+      "value": "convicted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-10"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-10"
+    },
+    "amount": {
+      "value": 21986700000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-10"
+    },
+    "recovered_amount": {
+      "value": 3858873300,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001042"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-01-10"
+    },
+    "started_on": "2024-01-10",
+    "closed_on": "2026-09-15",
+    "tags": ["doprava", "verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000221",
+      "person:0193b000-7c03-7000-8000-000000000017",
+      "person:0193b000-7c03-7000-8000-000000000118"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000031",
+    "type": "case",
+    "title": "Kauza Nákup áut Príkladovce",
+    "slug": "kauza-nakup-aut-prikladovce",
+    "summary": {
+      "value": "Nákup áut Príkladovce — kauza okolo inštitúcie Úrad pre pokusy a spoločnosti TestGroup a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001050"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-23"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001074"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-03-22"
+    },
+    "phase": {
+      "value": "convicted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001054"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-25"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001050"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-23"
+    },
+    "amount": {
+      "value": 15375300000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001050"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [
+        {
+          "value": 9199879000,
+          "sources": ["article:0193b000-7c02-7000-8000-000000001054"]
+        }
+      ],
+      "asserted_at": "2021-09-23"
+    },
+    "recovered_amount": {
+      "value": 1657961600,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001054"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-25"
+    },
+    "started_on": "2021-09-23",
+    "closed_on": "2025-05-29",
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000040",
+      "person:0193b000-7c03-7000-8000-000000000112",
+      "person:0193b000-7c03-7000-8000-000000000178",
+      "person:0193b000-7c03-7000-8000-000000000004"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000004"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000032",
+    "type": "case",
+    "title": "Kauza Mestská televízia Vzorovce",
+    "slug": "kauza-mestska-televizia-vzorovce",
+    "summary": {
+      "value": "Mestská televízia Vzorovce — kauza okolo inštitúcie Úrad pre verejné skúšky a spoločnosti TestData s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001081"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-09-18"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001087"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-12-20"
+    },
+    "phase": {
+      "value": "convicted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001084"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-11-29"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001081"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-09-18"
+    },
+    "amount": {
+      "value": 4141500000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001081"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-09-18"
+    },
+    "recovered_amount": {
+      "value": 756055300,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001084"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-11-29"
+    },
+    "started_on": "2019-09-18",
+    "closed_on": "2023-12-29",
+    "tags": ["pozemky", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000064",
+      "person:0193b000-7c03-7000-8000-000000000125"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000033",
+    "type": "case",
+    "title": "Kauza Zateplenie škôl Príkladovce",
+    "slug": "kauza-zateplenie-skol-prikladovce",
+    "summary": {
+      "value": "Zateplenie škôl Príkladovce — kauza okolo inštitúcie Fond Cvičnej podpory a spoločnosti SkúšConsult s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-10-22"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001115"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-12-01"
+    },
+    "phase": {
+      "value": "acquitted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001135"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-01"
+    },
+    "kind": {
+      "value": ["public_money", "elections_party_finance"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-10-22"
+    },
+    "amount": {
+      "value": 35509900000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001130"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-10-22"
+    },
+    "started_on": "2021-10-22",
+    "closed_on": "2026-05-26",
+    "tags": ["doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000118",
+      "person:0193b000-7c03-7000-8000-000000000317",
+      "person:0193b000-7c03-7000-8000-000000000174",
+      "person:0193b000-7c03-7000-8000-000000000142",
+      "person:0193b000-7c03-7000-8000-000000000107"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000006",
+      "org:0193b000-7c04-7000-8000-000000000005"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000034",
+    "type": "case",
+    "title": "Kauza Osvetlenie Modelovo",
+    "slug": "kauza-osvetlenie-modelovo",
+    "summary": {
+      "value": "Osvetlenie Modelovo — kauza okolo inštitúcie Krajský úrad Pokusov a spoločnosti ŠablónAgro s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001149"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-13"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001156"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-05-31"
+    },
+    "phase": {
+      "value": "acquitted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001165"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-16"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001149"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-13"
+    },
+    "amount": {
+      "value": 29494600000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001149"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-10-13"
+    },
+    "started_on": "2023-10-13",
+    "closed_on": "2026-06-27",
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000307",
+      "person:0193b000-7c03-7000-8000-000000000193",
+      "person:0193b000-7c03-7000-8000-000000000230",
+      "person:0193b000-7c03-7000-8000-000000000045",
+      "person:0193b000-7c03-7000-8000-000000000202",
+      "person:0193b000-7c03-7000-8000-000000000246",
+      "person:0193b000-7c03-7000-8000-000000000119"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000001",
+      "org:0193b000-7c04-7000-8000-000000000002"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000035",
+    "type": "case",
+    "title": "Kauza Kasárne Šablónovo",
+    "slug": "kauza-kasarne-sablonovo",
+    "summary": {
+      "value": "Kasárne Šablónovo — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti CvičConsult s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001207"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-09"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001214"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-06-23"
+    },
+    "phase": {
+      "value": "acquitted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001213"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-26"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001207"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-09"
+    },
+    "amount": {
+      "value": 6047400000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001207"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-09"
+    },
+    "started_on": "2024-03-09",
+    "closed_on": "2025-06-27",
+    "tags": ["verejne-obstaravanie", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000289",
+      "person:0193b000-7c03-7000-8000-000000000222",
+      "person:0193b000-7c03-7000-8000-000000000249",
+      "person:0193b000-7c03-7000-8000-000000000250",
+      "person:0193b000-7c03-7000-8000-000000000205"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000036",
+    "type": "case",
+    "title": "Kauza Kúpa budovy Skúšobné",
+    "slug": "kauza-kupa-budovy-skusobne",
+    "summary": {
+      "value": "Kúpa budovy Skúšobné — kauza okolo inštitúcie Agentúra pre ukážky a spoločnosti OverovInvest a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001240"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-02"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001247"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-04-16"
+    },
+    "phase": {
+      "value": "halted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001244"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-07-21"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001240"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-02"
+    },
+    "amount": {
+      "value": 15535500000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001240"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-03-02"
+    },
+    "started_on": "2022-03-02",
+    "closed_on": "2026-08-06",
+    "tags": ["pozemky"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000043",
+      "person:0193b000-7c03-7000-8000-000000000037",
+      "person:0193b000-7c03-7000-8000-000000000185",
+      "person:0193b000-7c03-7000-8000-000000000313"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000008"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000037",
+    "type": "case",
+    "title": "Kauza Poradenstvo pre fond Overovice",
+    "slug": "kauza-poradenstvo-pre-fond-overovice",
+    "summary": {
+      "value": "Poradenstvo pre fond Overovice — kauza okolo inštitúcie Mesto Testovice a spoločnosti CvičTrade a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001270"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-04-15"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001259"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-12-21"
+    },
+    "phase": {
+      "value": "halted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001263"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-04-24"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001270"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-04-15"
+    },
+    "amount": {
+      "value": 13029000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001270"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-04-15"
+    },
+    "started_on": "2022-04-15",
+    "closed_on": "2023-01-11",
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000179",
+      "person:0193b000-7c03-7000-8000-000000000072",
+      "person:0193b000-7c03-7000-8000-000000000152",
+      "person:0193b000-7c03-7000-8000-000000000114",
+      "person:0193b000-7c03-7000-8000-000000000212",
+      "person:0193b000-7c03-7000-8000-000000000001"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000001"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000038",
+    "type": "case",
+    "title": "Kauza Propagačné kampane Vzorovce",
+    "slug": "kauza-propagacne-kampane-vzorovce",
+    "summary": {
+      "value": "Propagačné kampane Vzorovce — kauza okolo inštitúcie Úrad pre pokusy a spoločnosti TestGroup s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001299"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-22"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001316"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-03-02"
+    },
+    "phase": {
+      "value": "halted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001316"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-03-02"
+    },
+    "kind": {
+      "value": ["public_money", "abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001299"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-22"
+    },
+    "amount": {
+      "value": 8160800000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001299"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-22"
+    },
+    "started_on": "2023-02-22",
+    "closed_on": "2026-05-01",
+    "tags": ["verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000029",
+      "person:0193b000-7c03-7000-8000-000000000007",
+      "person:0193b000-7c03-7000-8000-000000000291",
+      "person:0193b000-7c03-7000-8000-000000000301",
+      "person:0193b000-7c03-7000-8000-000000000122",
+      "person:0193b000-7c03-7000-8000-000000000093"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000004",
+      "org:0193b000-7c04-7000-8000-000000000003"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000039",
+    "type": "case",
+    "title": "Kauza Cyklotrasa Vzorovce",
+    "slug": "kauza-cyklotrasa-vzorovce",
+    "summary": {
+      "value": "Cyklotrasa Vzorovce — kauza okolo inštitúcie Nemocnica Skúšobná a spoločnosti PokusAgro a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001318"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-07-13"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001335"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-06-05"
+    },
+    "phase": {
+      "value": "lapsed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001326"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-08-01"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001318"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-07-13"
+    },
+    "amount": {
+      "value": 8964400000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001318"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-07-13"
+    },
+    "started_on": "2021-07-13",
+    "closed_on": "2026-08-30",
+    "tags": ["verejne-obstaravanie", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000233",
+      "person:0193b000-7c03-7000-8000-000000000141",
+      "person:0193b000-7c03-7000-8000-000000000277",
+      "person:0193b000-7c03-7000-8000-000000000053",
+      "person:0193b000-7c03-7000-8000-000000000303"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000007"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000040",
+    "type": "case",
+    "title": "Kauza Výstavisko Ukážkovo",
+    "slug": "kauza-vystavisko-ukazkovo",
+    "summary": {
+      "value": "Výstavisko Ukážkovo — kauza okolo inštitúcie Ústav Príkladov a spoločnosti ModelGroup s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001345"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-10"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001350"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-01-28"
+    },
+    "phase": {
+      "value": "lapsed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001356"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-11-08"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001345"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-10"
+    },
+    "amount": {
+      "value": 20776000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001345"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-10"
+    },
+    "started_on": "2019-03-10",
+    "closed_on": "2023-09-20",
+    "tags": ["samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000012",
+      "person:0193b000-7c03-7000-8000-000000000307",
+      "person:0193b000-7c03-7000-8000-000000000052",
+      "person:0193b000-7c03-7000-8000-000000000123",
+      "person:0193b000-7c03-7000-8000-000000000237"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000006",
+      "org:0193b000-7c04-7000-8000-000000000002",
+      "org:0193b000-7c04-7000-8000-000000000001"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000041",
+    "type": "case",
+    "title": "Kauza Trhovisko Vzorovce",
+    "slug": "kauza-trhovisko-vzorovce",
+    "summary": {
+      "value": "Trhovisko Vzorovce — kauza okolo inštitúcie Ústav Príkladov a spoločnosti ŠablónConsult a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001371"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-14"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001365"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-02-24"
+    },
+    "phase": {
+      "value": "lapsed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001371"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-14"
+    },
+    "kind": {
+      "value": ["public_money"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001371"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-14"
+    },
+    "amount": {
+      "value": 33900000000,
+      "unit": "EUR",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001371"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-07-14"
+    },
+    "started_on": "2023-07-14",
+    "closed_on": "2026-05-08",
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000251",
+      "person:0193b000-7c03-7000-8000-000000000058",
+      "person:0193b000-7c03-7000-8000-000000000240",
+      "person:0193b000-7c03-7000-8000-000000000180",
+      "person:0193b000-7c03-7000-8000-000000000285"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000003"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000042",
+    "type": "case",
+    "title": "Kauza Odvolaní vyšetrovatelia Príkladovce",
+    "slug": "kauza-odvolani-vysetrovatelia-prikladovce",
+    "summary": {
+      "value": "Odvolaní vyšetrovatelia Príkladovce — kauza okolo inštitúcie Obec Vzorovce a spoločnosti PokusInvest a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001381"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-19"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001398"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-05-14"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001419"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-23"
+    },
+    "kind": {
+      "value": ["investigation_interference"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001381"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-19"
+    },
+    "impact": {
+      "value": {
+        "value": 6,
+        "unit": "odvolaných vyšetrovateľov",
+        "note": "2 zrušené obvinenia politikov"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001381"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-09-19"
+    },
+    "started_on": "2021-09-19",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000272",
+      "person:0193b000-7c03-7000-8000-000000000132",
+      "person:0193b000-7c03-7000-8000-000000000074"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000005"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000043",
+    "type": "case",
+    "title": "Kauza Zastavené spisy Pokusov",
+    "slug": "kauza-zastavene-spisy-pokusov",
+    "summary": {
+      "value": "Zastavené spisy Pokusov — kauza okolo inštitúcie Agentúra pre ukážky a spoločnosti PokusInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001421"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-10"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001444"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-09-05"
+    },
+    "phase": {
+      "value": "appeal",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001429"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-08-28"
+    },
+    "kind": {
+      "value": ["investigation_interference"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001421"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-10"
+    },
+    "impact": {
+      "value": {
+        "value": 14,
+        "unit": "zastavených spisov"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001421"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-10"
+    },
+    "started_on": "2022-06-10",
+    "closed_on": null,
+    "tags": ["pozemky", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000168",
+      "person:0193b000-7c03-7000-8000-000000000256",
+      "person:0193b000-7c03-7000-8000-000000000248",
+      "person:0193b000-7c03-7000-8000-000000000002"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000007",
+      "org:0193b000-7c04-7000-8000-000000000003",
+      "org:0193b000-7c04-7000-8000-000000000002"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000044",
+    "type": "case",
+    "title": "Kauza Presun vyšetrovateľov Príkladovce",
+    "slug": "kauza-presun-vysetrovatelov-prikladovce",
+    "summary": {
+      "value": "Presun vyšetrovateľov Príkladovce — kauza okolo inštitúcie Prokuratúra Skúšobná a spoločnosti PríkladConsult s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001451"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-02"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001466"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-10-07"
+    },
+    "phase": {
+      "value": "charges",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001464"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-17"
+    },
+    "kind": {
+      "value": ["investigation_interference"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001451"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-02"
+    },
+    "impact": {
+      "value": {
+        "value": 4,
+        "unit": "presunutí vyšetrovatelia",
+        "note": "počas prebiehajúceho stíhania"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001451"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-02"
+    },
+    "started_on": "2021-01-02",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000101",
+      "person:0193b000-7c03-7000-8000-000000000045"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000045",
+    "type": "case",
+    "title": "Kauza Previerky úradníkov Modelovo",
+    "slug": "kauza-previerky-uradnikov-modelovo",
+    "summary": {
+      "value": "Previerky úradníkov Modelovo — kauza okolo inštitúcie Správa ciest Testovice a spoločnosti UkážkInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001467"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-05-29"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001508"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-11-10"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001487"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-06-15"
+    },
+    "kind": {
+      "value": ["abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001467"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-05-29"
+    },
+    "impact": {
+      "value": {
+        "value": 23,
+        "unit": "úradníkov preverovaných bez dôvodu"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001467"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-05-29"
+    },
+    "started_on": "2022-05-29",
+    "closed_on": null,
+    "tags": ["doprava", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000083",
+      "person:0193b000-7c03-7000-8000-000000000046",
+      "person:0193b000-7c03-7000-8000-000000000139",
+      "person:0193b000-7c03-7000-8000-000000000247"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000008"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000046",
+    "type": "case",
+    "title": "Kauza Služobné autá Pokusov",
+    "slug": "kauza-sluzobne-auta-pokusov",
+    "summary": {
+      "value": "Služobné autá Pokusov — kauza okolo inštitúcie Fond Cvičnej podpory a spoločnosti OverovTrade s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001520"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-08-14"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001529"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-08-20"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001540"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-05-03"
+    },
+    "kind": {
+      "value": ["abuse_of_power"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001520"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-08-14"
+    },
+    "impact": {
+      "value": {
+        "value": 9,
+        "unit": "služobných áut na súkromné účely"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001520"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-08-14"
+    },
+    "started_on": "2021-08-14",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000153",
+      "person:0193b000-7c03-7000-8000-000000000196",
+      "person:0193b000-7c03-7000-8000-000000000293",
+      "person:0193b000-7c03-7000-8000-000000000073",
+      "person:0193b000-7c03-7000-8000-000000000087",
+      "person:0193b000-7c03-7000-8000-000000000151",
+      "person:0193b000-7c03-7000-8000-000000000295"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000008"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000047",
+    "type": "case",
+    "title": "Kauza Skrytá kampaň Testovice",
+    "slug": "kauza-skryta-kampan-testovice",
+    "summary": {
+      "value": "Skrytá kampaň Testovice — kauza okolo inštitúcie Krajský úrad Pokusov a spoločnosti UkážkInvest s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001552"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-12-26"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001577"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2026-09-03"
+    },
+    "phase": {
+      "value": "indictment",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001565"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-06"
+    },
+    "kind": {
+      "value": ["elections_party_finance"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001552"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-12-26"
+    },
+    "impact": {
+      "value": {
+        "value": 3,
+        "unit": "neohlásené kampane",
+        "note": "pred voľbami 2023"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001552"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2022-12-26"
+    },
+    "started_on": "2022-12-26",
+    "closed_on": null,
+    "tags": ["verejne-obstaravanie"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000155",
+      "person:0193b000-7c03-7000-8000-000000000036",
+      "person:0193b000-7c03-7000-8000-000000000121",
+      "person:0193b000-7c03-7000-8000-000000000218"
+    ],
+    "party_ids": ["org:0193b000-7c04-7000-8000-000000000008"]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000048",
+    "type": "case",
+    "title": "Kauza Pôžička strane Ukážkovo",
+    "slug": "kauza-pozicka-strane-ukazkovo",
+    "summary": {
+      "value": "Pôžička strane Ukážkovo — kauza okolo inštitúcie Polícia Vzorová a spoločnosti PríkladEnergy s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001581"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-08"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001597"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-01-11"
+    },
+    "phase": {
+      "value": "halted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001586"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-12"
+    },
+    "kind": {
+      "value": ["elections_party_finance"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001581"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-08"
+    },
+    "impact": {
+      "value": {
+        "value": 1,
+        "unit": "nevrátená pôžička",
+        "note": "od firmy napojenej na stranu"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001581"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-02-08"
+    },
+    "started_on": "2023-02-08",
+    "closed_on": "2025-03-19",
+    "tags": ["verejne-obstaravanie", "samosprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000157",
+      "person:0193b000-7c03-7000-8000-000000000280"
+    ],
+    "party_ids": []
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000049",
+    "type": "case",
+    "title": "Kauza Poradca ministra Testovice",
+    "slug": "kauza-poradca-ministra-testovice",
+    "summary": {
+      "value": "Poradca ministra Testovice — kauza okolo inštitúcie Inšpektorát Modelov a spoločnosti VzorMed s.r.o.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001605"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-01"
+    },
+    "status": {
+      "value": "open",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001615"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-12-12"
+    },
+    "phase": {
+      "value": "investigation",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001622"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-07"
+    },
+    "kind": {
+      "value": ["conflict_of_interest"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001605"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-01"
+    },
+    "impact": {
+      "value": {
+        "value": 11,
+        "unit": "zmlúv s firmou blízkej osoby"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001605"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2019-03-01"
+    },
+    "started_on": "2019-03-01",
+    "closed_on": null,
+    "tags": [],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000252",
+      "person:0193b000-7c03-7000-8000-000000000064",
+      "person:0193b000-7c03-7000-8000-000000000225",
+      "person:0193b000-7c03-7000-8000-000000000114",
+      "person:0193b000-7c03-7000-8000-000000000091",
+      "person:0193b000-7c03-7000-8000-000000000145",
+      "person:0193b000-7c03-7000-8000-000000000297",
+      "person:0193b000-7c03-7000-8000-000000000001"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000005",
+      "org:0193b000-7c04-7000-8000-000000000007",
+      "org:0193b000-7c04-7000-8000-000000000002",
+      "org:0193b000-7c04-7000-8000-000000000001"
+    ]
+  },
+  {
+    "_id": "case:0193b000-7c05-7000-8000-000000000050",
+    "type": "case",
+    "title": "Kauza Únik dokumentov Skúšobné",
+    "slug": "kauza-unik-dokumentov-skusobne",
+    "summary": {
+      "value": "Únik dokumentov Skúšobné — kauza okolo inštitúcie Fond Cvičnej podpory a spoločnosti CvičInvest a.s.. Text je vymyslený, slúži na testovanie registra.",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001646"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-16"
+    },
+    "status": {
+      "value": "closed",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001651"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2023-05-28"
+    },
+    "phase": {
+      "value": "halted",
+      "sources": ["article:0193b000-7c02-7000-8000-000000001659"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-02-22"
+    },
+    "kind": {
+      "value": ["other"],
+      "sources": ["article:0193b000-7c02-7000-8000-000000001646"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-16"
+    },
+    "impact": {
+      "value": {
+        "value": 40,
+        "unit": "uniknutých dokumentov"
+      },
+      "sources": ["article:0193b000-7c02-7000-8000-000000001646"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2021-01-16"
+    },
+    "started_on": "2021-01-16",
+    "closed_on": "2023-06-26",
+    "tags": ["pozemky", "doprava"],
+    "publish_state": "published",
+    "created_at": "2026-11-15T09:00:00Z",
+    "updated_at": "2026-11-15T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "person_ids": [
+      "person:0193b000-7c03-7000-8000-000000000044",
+      "person:0193b000-7c03-7000-8000-000000000246",
+      "person:0193b000-7c03-7000-8000-000000000007",
+      "person:0193b000-7c03-7000-8000-000000000064",
+      "person:0193b000-7c03-7000-8000-000000000216",
+      "person:0193b000-7c03-7000-8000-000000000277",
+      "person:0193b000-7c03-7000-8000-000000000092"
+    ],
+    "party_ids": [
+      "org:0193b000-7c04-7000-8000-000000000004",
+      "org:0193b000-7c04-7000-8000-000000000007"
+    ]
+  }
+]

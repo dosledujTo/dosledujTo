@@ -1,0 +1,20 @@
+{
+  "default_analyzer": "standard",
+  "analyzer": {
+    "name": "perfield",
+    "default": "standard",
+    "fields": {
+      "kind": "keyword",
+      "status": "keyword",
+      "publisher": "keyword",
+      "feed_id": "keyword",
+      "url": "keyword",
+      "canonical_url": "keyword",
+      "content_hash": "keyword",
+      "case_id": "keyword",
+      "person_id": "keyword",
+      "paywall": "keyword",
+      "unlinked": "keyword"
+    }
+  }
+}

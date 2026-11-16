@@ -1,0 +1,60 @@
+/* Písma sú self-hostované a **zúžené na znaky, ktoré register naozaj použije**
+   — žiadne volanie na Google a žiadne glyfy navyše.
+
+   Podmnožina: latinka, slovenská a česká diakritika, nemecké prehlásky (názvy
+   firiem), interpunkcia vrátane slovenských úvodzoviek „ “, symboly € § © a
+   šípky trendu. Generuje ju `scripts/subset-fonts.py` z variabilných TTF
+   z repozitára google/fonts; postup je v README.
+
+   Bricolage Grotesque ostáva variabilná v osi optical size — `opsz` sa nastaví
+   sám podľa veľkosti písma (`font-optical-sizing: auto`), takže 60px nadpis
+   a 22px titulok karty majú každý svoj tvar z jedného súboru. */
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(/assets/fonts/bricolage-grotesque-var.woff2) format('woff2-variations'),
+       url(/assets/fonts/bricolage-grotesque-var.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-400.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-600.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/geist-mono-400.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/fonts/geist-mono-500.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/geist-mono-600.woff2) format('woff2');
+}

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dosleduj.to – návrhy prepojení a loga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Červená niť: grotesk Bricolage + Source Sans, červená len pre väzby ku kauzám a dôležité stavy. Layout: titulka a profil osoby, prepínané lištou návrhu. */
+:root{
+  --bg:#f4f3f1; --surface:#ffffff; --ink:#151312; --muted:#69625c; --line:#e2ddd8;
+  --accent:#d5231b; --accent-soft:#fbe1df; --org:#151312; --org-soft:#ebe7e3;
+  --ok:#11643a; --ok-soft:#e3f4ea;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"Geist Mono",ui-monospace,monospace;
+  --radius:2px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121110; --surface:#1b1918; --ink:#f1ede9; --muted:#a39b94; --line:#2f2b28;
+    --accent:#ff4a40; --accent-soft:#3b1715; --org:#e9e4df; --org-soft:#2a2624;
+    --ok:#6fd49c; --ok-soft:#14301f; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121110; --surface:#1b1918; --ink:#f1ede9; --muted:#a39b94; --line:#2f2b28;
+  --accent:#ff4a40; --accent-soft:#3b1715; --org:#e9e4df; --org-soft:#2a2624;
+  --ok:#6fd49c; --ok-soft:#14301f; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--body);transition:background .2s,color .2s}
+@media (prefers-reduced-motion:reduce){body{transition:none}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* prepínač návrhov */
+.dbar{position:sticky;top:0;z-index:5;background:#151312;color:#f4f3f1;border-bottom:1px solid #000}
+.dbar .wrap{display:flex;gap:10px;align-items:center;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.dbar b{font:600 12px var(--mono);letter-spacing:.06em;margin-right:auto}
+.dbar button{font:600 13px var(--body);background:transparent;color:#f4f3f1;border:1px solid #4a4440;border-radius:999px;padding:5px 14px;cursor:pointer}
+.dbar button[aria-pressed="true"]{background:#f4f3f1;color:#151312}
+[data-view]{display:none}
+[data-view].show{display:block}
+.theme-btn{font:600 13px var(--body);background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:6px 12px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.theme-btn:hover{border-color:var(--accent)}
+
+/* logá */
+.logos{display:grid;grid-template-columns:1fr;gap:16px;padding:28px 0 8px}
+.logo-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:18px;color:var(--ink)}
+.logo-card[aria-current="true"]{outline:2px solid var(--accent)}
+.logo-card .row{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.logo-card .dark{background:#151312;border-radius:8px;padding:16px 18px;display:flex;gap:16px;align-items:center}
+.logo-card p{margin:0;font:400 14px/1.5 var(--body);color:var(--muted)}
+.logo-card h3{margin:0;font:600 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+/* hlavička webu */
+.site{background:var(--surface);border-bottom:1px solid var(--line)}
+.site .wrap{display:flex;align-items:center;gap:28px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.site nav{display:flex;gap:20px;font-weight:500;font-size:14px;margin-right:auto}
+.site nav a{text-decoration:none;color:var(--muted)}
+.site nav a[aria-current]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--muted);font-size:13px;min-width:240px;background:var(--bg)}
+.search{border-radius:var(--radius)}
+.brand-b{display:block;color:var(--ink)}
+
+/* hlava profilu */
+.crumbs{font-size:12px;color:var(--muted);padding:22px 0 0}
+.head{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding:12px 0 28px;align-items:end}
+.head h1{font:700 52px/1.02 var(--display);letter-spacing:-.025em;margin:6px 0 12px;text-wrap:balance}
+.head h1{font-weight:800;letter-spacing:-.03em}
+.kicker{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.lead{color:var(--muted);max-width:60ch;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.stats div{padding:14px 16px;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font:600 28px/1.1 var(--display)}
+.stats span{font-size:12px;color:var(--muted)}
+
+/* záložky */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.tabs a{padding:10px 16px;text-decoration:none;font-weight:600;font-size:14px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a.on{color:var(--ink);border-color:var(--accent)}
+.tabs small{font:400 12px var(--mono);color:var(--muted);margin-left:6px}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:28px}
+.panel-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.panel h2{font:700 24px var(--display);letter-spacing:-.015em;margin:0}
+.panel .hint{font-size:13px;color:var(--muted);margin:0;max-width:62ch}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:22px;height:0;border-top:2px solid var(--ink)}
+.sw.d{border-top-style:dashed}
+.sw.e{opacity:.35}
+.sw.c{border-color:var(--accent)}
+.figure{overflow-x:auto}
+svg text{font-family:var(--body)}
+
+/* role – prezumpcia neviny, každý stav iný tvar */
+.role{display:inline-block;font:600 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:4px;white-space:nowrap}
+.r-podozrivy{border:1px dashed var(--muted);color:var(--muted)}
+.r-obvineny{border:1px solid var(--accent);color:var(--accent)}
+.r-obzalovany{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent)}
+.r-odsudeny{background:var(--accent);color:#fff}
+.r-oslobodeny{background:var(--ok-soft);color:var(--ok);border:1px solid var(--ok)}
+.r-svedok{border:1px solid var(--line);color:var(--muted)}
+
+/* časová os */
+.tl{display:grid;grid-template-columns:220px 1fr;font-size:13px;min-width:760px}
+.tl .lbl{padding:12px 12px 12px 0;border-top:1px solid var(--line)}
+.tl .lbl b{display:block;font-weight:600;font-size:14px}
+.tl .lbl span{color:var(--muted);font-size:12px}
+.tl .track{position:relative;border-top:1px solid var(--line);min-height:56px}
+.tl .axis{position:relative;height:24px}
+.tl .axis i{position:absolute;top:4px;font:400 11px var(--mono);color:var(--muted);transform:translateX(-50%);font-style:normal}
+.bar{position:absolute;top:20px;height:14px;border-radius:3px;background:var(--org)}
+.bar.ended{opacity:.35}
+.bar.derived{background:repeating-linear-gradient(90deg,var(--org) 0 6px,transparent 6px 9px);border:1px solid var(--org)}
+.bar.case{background:var(--accent)}
+.bar.open::after{content:"";position:absolute;right:-7px;top:0;border:7px solid transparent;border-left-color:inherit;border-left-color:var(--org)}
+.bar.case.open::after{border-left-color:var(--accent)}
+.bar-tag{position:absolute;top:2px;font:500 11px var(--mono);color:var(--muted);white-space:nowrap}
+.ev{position:absolute;top:16px;width:12px;height:12px;transform:translateX(-50%) rotate(45deg);background:var(--surface);border:2px solid var(--ink)}
+.ev.future{border-style:dashed;border-color:var(--accent)}
+.ev-l{position:absolute;top:36px;font:400 11px var(--mono);color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+.today{position:absolute;top:0;bottom:0;width:0;border-left:1px solid var(--accent);pointer-events:none}
+.today-l{position:absolute;top:-2px;font:600 10px var(--mono);color:var(--accent);transform:translateX(-50%);letter-spacing:.08em}
+.insight{margin-top:16px;display:flex;gap:12px;align-items:flex-start;background:var(--accent-soft);border-radius:var(--radius);padding:12px 14px;font-size:13px}
+.insight b{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);white-space:nowrap;padding-top:2px}
+.src{font:500 11px var(--mono);color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+
+/* titulka */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;padding:56px 0 44px;border-bottom:1px solid var(--line);align-items:start}
+.hero-h{font:800 60px/1 var(--display);letter-spacing:-.035em;margin:12px 0 18px;text-wrap:balance}
+.hero .lead{font-size:17px;max-width:56ch}
+.big-search{display:flex;margin-top:26px;max-width:560px;border:2px solid var(--ink);background:var(--surface)}
+.big-search input{flex:1;font:400 16px var(--body);padding:13px 14px;border:0;background:transparent;color:var(--ink);min-width:0}
+.big-search button{font:700 15px var(--display);background:var(--ink);color:var(--bg);border:0;padding:0 22px;cursor:pointer}
+.big-search button:hover{background:var(--accent)}
+.try{font-size:13px;color:var(--muted);margin:10px 0 0}
+.try a{color:var(--ink);text-decoration-color:var(--accent)}
+.reg{background:var(--surface);border:1px solid var(--line);padding:20px 22px}
+.reg-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}
+.reg-grid div{padding:12px 0;border-top:1px solid var(--line)}
+.reg-grid div:nth-child(odd):not(.wide){padding-right:12px}
+.reg-grid b{display:block;font:700 34px/1.05 var(--display);letter-spacing:-.02em}
+.reg-grid span{font-size:12.5px;color:var(--muted)}
+.reg-grid .wide{grid-column:1/-1}
+.reg-grid .money{color:var(--accent)}
+.quality{border-top:1px solid var(--line);padding-top:12px;font-size:12.5px;color:var(--muted)}
+.q-bar{height:6px;background:var(--org-soft);margin-bottom:8px}
+.q-bar i{display:block;height:100%;background:var(--ink)}
+.block{padding:40px 0;border-bottom:1px solid var(--line)}
+.block-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
+.block h2{font:800 30px var(--display);letter-spacing:-.025em;margin:0}
+.more{font:600 13px var(--body);color:var(--accent);text-decoration:none}
+.upcoming{list-style:none;margin:0;padding:0}
+.upcoming li{display:grid;grid-template-columns:130px 24px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.upcoming .date{font:500 13px var(--mono);color:var(--muted)}
+.upcoming .date b{font:800 26px var(--display);color:var(--ink);margin-right:4px}
+.ev-dia{width:12px;height:12px;transform:rotate(45deg);border:2px dashed var(--accent);justify-self:center}
+.upcoming a{font:700 19px var(--display);color:var(--ink);text-decoration:none}
+.upcoming a:hover{color:var(--accent)}
+.upcoming div span{display:block;font-size:13px;color:var(--muted)}
+.upcoming .in{font:600 12px var(--mono);color:var(--accent);white-space:nowrap}
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.case{background:var(--surface);border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--ink)}
+.case .pills{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.case .tags{font-size:12px;color:var(--muted)}
+.case h3{font:800 22px/1.15 var(--display);letter-spacing:-.02em;margin:0}
+.case h3 a{color:var(--ink);text-decoration:none}
+.case h3 a:hover{color:var(--accent)}
+.case p{margin:0;font-size:14px;color:var(--muted);flex:1}
+.thread{display:flex;align-items:center;gap:0;position:relative;padding:4px 0}
+.thread::before{content:"";position:absolute;left:4px;right:110px;top:50%;border-top:1.5px solid var(--accent)}
+.thread i{font:500 11.5px var(--mono);color:var(--muted);font-style:normal;margin-left:auto;padding-left:10px;background:var(--surface);position:relative}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid var(--surface);position:relative;margin-right:6px;display:inline-block;flex:none}
+.sq{width:11px;height:11px;background:var(--org-soft);border:1.5px solid var(--ink);position:relative;margin-right:6px;display:inline-block;flex:none}
+.dot.big{width:16px;height:16px}.sq.big{width:15px;height:15px}
+.case-foot{display:flex;gap:10px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px}
+.case-foot b{font:800 24px var(--display);letter-spacing:-.02em}
+.sporne{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--accent);padding:1px 6px}
+.closed{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);padding:1px 6px}
+.change{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.bars{list-style:none;margin:0;padding:0}
+.bars li{display:grid;grid-template-columns:150px 1fr 90px;gap:12px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:14px}
+.bars a{color:var(--ink);font-weight:600;text-decoration:none}
+.bars .b{height:10px;background:var(--org-soft)}
+.bars .b i{display:block;height:100%;background:var(--accent)}
+.bars b{text-align:right;font:600 13px var(--mono)}
+.names{list-style:none;margin:0;padding:0}
+.names li{display:grid;grid-template-columns:22px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.names a{font:700 17px var(--display);color:var(--ink);text-decoration:none}
+.names div span{display:block;font-size:12.5px;color:var(--muted)}
+.names b{font:600 12px var(--mono);color:var(--accent)}
+.fine{font-size:12px;color:var(--muted);margin:12px 0 0}
+.follow{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;margin:40px 0;padding:28px;border:2px solid var(--ink);background:var(--surface)}
+.follow h2{font:800 26px var(--display);letter-spacing:-.02em;margin:0 0 6px}
+.follow p{margin:0;color:var(--muted)}
+.follow form{display:flex}
+.follow input{font:400 15px var(--body);padding:11px 12px;border:1px solid var(--line);border-right:0;background:var(--bg);color:var(--ink);min-width:220px}
+.follow button{font:700 14px var(--display);background:var(--accent);color:#fff;border:0;padding:0 18px;cursor:pointer}
+footer.foot{background:#151312;color:#e9e4df;margin-top:24px}
+footer.foot .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-top:44px;padding-bottom:40px;font-size:13.5px}
+footer.foot h4{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#ff6a60;margin:0 0 8px}
+footer.foot p{margin:0;opacity:.75;line-height:1.6}
+footer.foot a{color:#fff}
+@media (max-width:900px){
+  .hero,.two,.follow{grid-template-columns:1fr}
+  .hero-h{font-size:40px}
+  .cases{grid-template-columns:1fr}
+  .upcoming li{grid-template-columns:96px 1fr;}
+  .upcoming .ev-dia{display:none}
+  .upcoming .in{grid-column:2}
+  .bars li{grid-template-columns:110px 1fr 76px}
+  footer.foot .wrap{grid-template-columns:1fr}
+  .follow input{min-width:0;flex:1}
+}
+
+
+/* peniaze */
+.hint-lg{color:var(--muted);max-width:70ch;margin:-6px 0 20px}
+.mtotal{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--surface);margin-bottom:18px}
+.mtotal>div{padding:16px 18px;border-left:1px solid var(--line)}
+.mtotal>div:first-child{border-left:0}
+.mtotal b{display:block;font:800 30px/1.1 var(--display);letter-spacing:-.02em;margin:6px 0 2px}
+.mtotal span:not(.kicker){font-size:12.5px;color:var(--muted)}
+.mtotal .ret b{color:var(--ok)}
+.mstack{display:flex;height:34px;gap:2px}
+.mseg{display:block;height:100%}
+.o0{background:color-mix(in srgb,var(--ink) 18%,transparent)}
+.o1{background:color-mix(in srgb,var(--ink) 38%,transparent)}
+.o2{background:color-mix(in srgb,var(--ink) 62%,transparent)}
+.o3{background:var(--ink)}
+.c0{background:var(--accent)}
+.c1{background:var(--ok)}
+.c2{background:repeating-linear-gradient(135deg,var(--muted) 0 4px,transparent 4px 8px);border:1px solid var(--muted)}
+.c3{background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--muted) 55%,transparent) 0 2px,transparent 2px 7px);border:1px solid color-mix(in srgb,var(--muted) 55%,transparent)}
+.mscale{position:relative;height:22px;font:500 11px var(--mono);color:var(--muted)}
+.mscale span{position:absolute;top:5px;left:0;white-space:nowrap}
+.mscale span:nth-child(2){transform:translateX(-6px)}
+.mcols{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:14px}
+.mcols h3{font:800 20px var(--display);margin:0 0 6px;display:flex;justify-content:space-between;align-items:baseline}
+.mcols h3 small{font:600 13px var(--mono);color:var(--muted)}
+.mrows{list-style:none;margin:0;padding:0}
+.mrows li{display:grid;grid-template-columns:14px 1fr 90px auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.mk{width:14px;height:14px;display:block}
+.mrows b{font-weight:600;font-size:14.5px}
+.mrows div span{display:block;font-size:12px;color:var(--muted)}
+.mbar{height:8px;background:var(--org-soft)}
+.mbar i{display:block;height:100%}
+.mv{text-align:right;white-space:nowrap}
+.mv b{font:600 13.5px var(--mono)}
+.mv span{display:block;font-size:11.5px;color:var(--muted)}
+@media (max-width:900px){.mtotal{grid-template-columns:1fr 1fr}.mtotal>div:nth-child(3){border-left:0}.mtotal>div:nth-child(n+3){border-top:1px solid var(--line)}.mcols{grid-template-columns:1fr}.mrows li{grid-template-columns:14px 1fr auto}.mbar{display:none}.mscale span:nth-child(2){display:none}}
+
+
+/* druh kauzy, top, zabudnuté */
+.kind{font:600 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.case.nonfin{border-top-color:var(--accent)}
+.case-foot.impact{align-items:center;gap:12px}
+.imp-l{font-size:13px;line-height:1.3;color:var(--ink)}
+.imp-l small{color:var(--muted);font-size:12px}
+.nofin{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:18px;padding:14px 16px;border:1px dashed var(--line);background:var(--surface)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:3px 10px}
+.chips a:hover{border-color:var(--accent)}
+.top{list-style:none;margin:0;padding:0}
+.top li{display:grid;grid-template-columns:40px 1fr 180px 150px;gap:18px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.rk{font:800 28px var(--display);color:var(--accent)}
+.tt a{font:700 18px var(--display);color:var(--ink);text-decoration:none}
+.tt a:hover{color:var(--accent)}
+.tt span{display:block;font-size:12.5px;color:var(--muted)}
+.spark .sl{fill:none;stroke:var(--accent);stroke-width:1.6}
+.spark .sa{fill:color-mix(in srgb,var(--accent) 12%,transparent)}
+.spark .sd{fill:var(--accent)}
+.tc{text-align:right}
+.tc b{display:block;font:600 13.5px var(--mono)}
+.tc span{font-size:12px;color:var(--muted)}
+.forgot .spark .sl{stroke:var(--muted)}
+.forgot .spark .sa{fill:color-mix(in srgb,var(--muted) 14%,transparent)}
+.forgot .spark .sd{fill:var(--muted)}
+.fg-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fg-list li{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--muted);padding:16px;display:grid;gap:10px}
+.fg b{font-size:13.5px;color:var(--accent);display:block}
+.fg span{font-size:12.5px;color:var(--muted)}
+.mini-btn{justify-self:start;font:700 13px var(--display);background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:5px 12px;cursor:pointer}
+.mini-btn:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:900px){.top li{grid-template-columns:32px 1fr}.top .spark{grid-column:2}.top .tc{grid-column:2;text-align:left}.fg-list{grid-template-columns:1fr}}
+
+/* zdroje */
+.src-tools{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--radius)}
+.seg button{font:600 13px var(--body);background:transparent;color:var(--muted);border:0;border-left:1px solid var(--line);padding:7px 12px;cursor:pointer}
+.seg button:first-child{border-left:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.sel{font-size:13px;color:var(--muted);display:inline-flex;gap:8px;align-items:center}
+.sel select{font:500 13px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:6px 8px}
+.src-list{list-style:none;margin:0;padding:0}
+.src-list li{display:grid;grid-template-columns:44px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
+.src-list .no{font:500 13px var(--mono);color:var(--accent);padding-top:2px}
+.src-list .t{font-weight:600;font-size:15px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.src-list .t:hover{border-color:var(--accent)}
+.src-list .m{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted);margin-top:5px}
+.src-list .uses{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.use{font-size:12px;background:var(--org-soft);color:var(--ink);padding:2px 8px;border-radius:var(--radius)}
+.off{font:600 10.5px var(--mono);letter-spacing:.05em;text-transform:uppercase;background:var(--ink);color:var(--bg);padding:2px 7px;border-radius:var(--radius)}
+.arch{font:500 12px var(--mono);color:var(--muted)}
+.src-list .d{font:500 12.5px var(--mono);color:var(--muted);white-space:nowrap;padding-top:2px}
+.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px;font-size:13px;color:var(--muted)}
+.pager nav{display:flex;gap:4px}
+.pager button{font:600 13px var(--mono);min-width:36px;height:36px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:var(--radius);cursor:pointer;padding:0 10px}
+.pager button[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pager button:disabled{opacity:.4;cursor:default}
+.empty{padding:24px 0;color:var(--muted)}
+@media (max-width:640px){.src-list li{grid-template-columns:36px 1fr}.src-list .d{grid-column:2}}
+
+.note{max-width:1120px;margin:0 auto 40px;padding:0 24px;font-size:13px;color:var(--muted)}
+
+@media (max-width:820px){
+  .logos,.head{grid-template-columns:1fr}
+  .head h1{font-size:38px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats div:nth-child(3){border-left:0}
+  .stats div:nth-child(n+3){border-top:1px solid var(--line)}
+  .search{min-width:0;flex:1}
+}
+</style>
+</head>
+<body>
+<div class="dbar"><div class="wrap">
+  <b>NÁVRH · ČERVENÁ NIŤ</b>
+  <button type="button" data-go="titulka" aria-pressed="true">Titulka</button>
+  <button type="button" data-go="osoba" aria-pressed="false">Profil osoby</button>
+  <button type="button" data-go="logo" aria-pressed="false">Logo</button>
+</div></div>
+
+<div class="wrap" data-view="logo">
+  <section class="logos" aria-label="Návrhy loga">
+    <div class="logo-card" id="card-b">
+      <h3>Logo · Červená niť</h3>
+      <div class="row">
+        <svg width="260" height="56" viewBox="0 0 260 56" role="img" aria-label="dosleduj.to, logo B">
+          <text x="2" y="34" font-family="'Bricolage Grotesque',sans-serif" font-weight="800" font-size="31" letter-spacing="-1.4" style="fill:var(--ink)">dosleduj.to</text>
+          <path d="M14 44 C 60 54, 110 34, 150 46 S 205 40, 222 30" fill="none" style="stroke:var(--accent)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="14" cy="44" r="4.5" style="fill:var(--accent)"/>
+          <circle cx="222" cy="30" r="4.5" style="fill:var(--accent)"/>
+        </svg>
+        <div class="dark">
+          <svg width="52" height="52" viewBox="0 0 52 52" role="img" aria-label="ikona B">
+            <text x="7" y="36" font-family="'Bricolage Grotesque',sans-serif" font-weight="800" font-size="34" fill="#fff">d</text>
+            <path d="M10 44 C 22 50, 34 30, 44 14" fill="none" stroke="#ff4a40" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="10" cy="44" r="4" fill="#ff4a40"/><circle cx="44" cy="14" r="4" fill="#ff4a40"/>
+          </svg>
+        </div>
+      </div>
+      <p>Odkaz na nástenku vyšetrovateľa: <b>červená niť</b> spája špendlíky v mene. Výraznejšie, novinárske, grotesk Bricolage. Červená sa v grafoch používa len na väzby ku kauzám.</p>
+    </div>
+  </section>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="#" class="brand-b" data-go="titulka" aria-label="dosleduj.to">
+      <svg width="170" height="37" viewBox="0 0 260 56" aria-hidden="true">
+        <text x="2" y="34" font-family="'Bricolage Grotesque',sans-serif" font-weight="800" font-size="31" letter-spacing="-1.4" style="fill:var(--ink)">dosleduj.to</text>
+        <path d="M14 44 C 60 54, 110 34, 150 46 S 205 40, 222 30" fill="none" style="stroke:var(--accent)" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="14" cy="44" r="4.5" style="fill:var(--accent)"/><circle cx="222" cy="30" r="4.5" style="fill:var(--accent)"/>
+      </svg>
+    </a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="#" id="nav-kauzy">Kauzy</a><a href="#" id="nav-ludia">Ľudia</a><a href="#">Firmy a strany</a><a href="#">Čo sa chystá</a>
+    </nav>
+    <div class="search">⌕ Hľadať osobu, firmu, kauzu, IČO…</div>
+    <button type="button" class="theme-btn" id="theme-btn" aria-label="Prepnúť tmavý režim"><span aria-hidden="true">◐</span><span id="theme-l">Tmavý režim</span></button>
+  </div>
+</header>
+
+<main class="wrap" data-view="titulka">
+  <section class="hero">
+    <div>
+      <span class="kicker">Verejná pamäť káuz · Slovensko</span>
+      <h1 class="hero-h">Kauzy nezmiznú, keď o&nbsp;nich médiá prestanú písať.</h1>
+      <p class="lead">Jedna stránka na kauzu, vždy aktuálna. Kto v nej figuruje, s akými firmami a stranami je prepojený, koľko peňazí je v hre a čo sa chystá. Pri každom údaji je konkrétny zdroj.</p>
+      <form class="big-search" role="search" onsubmit="event.preventDefault()">
+        <label for="q" class="sr">Hľadať</label>
+        <input id="q" placeholder="Meno, firma, IČO, kauza alebo spisová značka">
+        <button type="submit">Hľadať</button>
+      </form>
+      <p class="try">Skús: <a href="#" data-go="osoba">Ján Testovací</a> · <a href="#">TestBuild s.r.o.</a> · <a href="#">2T/45/2025</a></p>
+    </div>
+    <div class="reg">
+      <span class="kicker">Stav registra</span>
+      <div class="reg-grid tnum">
+        <div><b>50</b><span>sledovaných káuz</span></div>
+        <div><b>318</b><span>ľudí</span></div>
+        <div><b>127</b><span>firiem a strán</span></div>
+        <div><b>1 946</b><span>zdrojov</span></div>
+        <div class="wide"><b class="money">412,6 mil. €</b><span>suma, o ktorú ide · <b class="tnum" style="font:inherit;display:inline;color:var(--ink)">123,2 mil. €</b> v uzavretých kauzách</span></div>
+      </div>
+      <div class="quality">
+        <div class="q-bar"><i style="width:61%"></i></div>
+        <span><b class="tnum">61 %</b> údajov podložených aj úradným dokumentom, nielen článkom</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="block money-block">
+    <div class="block-head"><h2>Peniaze v kauzách</h2><a class="more" href="#">Ako počítame →</a></div>
+    <p class="hint-lg">Suma, o ktorú v kauzách ide podľa zdrojov. Nie je to preukázaná škoda. Rozdelené podľa toho, kam sa kauza úradne dostala a ako sa skončila.</p>
+    <div class="mtotal tnum">
+      <div><span class="kicker">Spolu</span><b>412,6 mil. €</b><span>42 káuz so sumou</span></div>
+      <div><span class="kicker">V riešení</span><b>289,4 mil. €</b><span>70,1 % · 29 káuz</span></div>
+      <div><span class="kicker">Uzavreté</span><b>123,2 mil. €</b><span>29,9 % · 13 káuz</span></div>
+      <div class="ret"><span class="kicker">Vrátené alebo zaistené</span><b>9,8 mil. €</b><span>2,4 % zo sumy vo všetkých kauzách</span></div>
+    </div>
+    <div class="mstack" role="img" aria-label="Rozdelenie sumy podľa stavu konania"><span class="mseg o0" style="width:14.106%" title="Bez trestného konania: 58,2 mil. €"></span><span class="mseg o1" style="width:23.267%" title="Vyšetrovanie: 96,0 mil. €"></span><span class="mseg o2" style="width:18.056%" title="Obvinenie: 74,5 mil. €"></span><span class="mseg o3" style="width:14.712%" title="Obžaloba a súd: 60,7 mil. €"></span><span class="mseg c0" style="width:10.010%" title="Právoplatné odsúdenie: 41,3 mil. €"></span><span class="mseg c1" style="width:4.581%" title="Oslobodenie: 18,9 mil. €"></span><span class="mseg c2" style="width:9.113%" title="Zastavené alebo zrušené: 37,6 mil. €"></span><span class="mseg c3" style="width:6.156%" title="Premlčané alebo odložené: 25,4 mil. €"></span></div>
+    <div class="mscale tnum"><span>0</span><span style="left:70.14%">▲ hranica otvorené / uzavreté</span><span style="right:0;left:auto">412,6 mil. €</span></div>
+    <div class="mcols">
+      <div><h3>V riešení <small class="tnum">289,4 mil. €</small></h3><ul class="mrows"><li><span class="mk o0"></span><div><b>Bez trestného konania</b><span>len médiá, kontrola NKÚ alebo ÚVO</span></div><span class="mbar"><i class="o0" style="width:60.6%"></i></span><span class="mv tnum"><b>58,2 mil. €</b><span>14,1 % · 6 káuz</span></span></li><li><span class="mk o1"></span><div><b>Vyšetrovanie</b><span>trestné stíhanie vo veci, bez obvinenej osoby</span></div><span class="mbar"><i class="o1" style="width:100.0%"></i></span><span class="mv tnum"><b>96,0 mil. €</b><span>23,3 % · 9 káuz</span></span></li><li><span class="mk o2"></span><div><b>Obvinenie</b><span>vznesené obvinenie konkrétnej osobe</span></div><span class="mbar"><i class="o2" style="width:77.6%"></i></span><span class="mv tnum"><b>74,5 mil. €</b><span>18,1 % · 8 káuz</span></span></li><li><span class="mk o3"></span><div><b>Obžaloba a súd</b><span>podaná obžaloba, konanie na súde</span></div><span class="mbar"><i class="o3" style="width:63.2%"></i></span><span class="mv tnum"><b>60,7 mil. €</b><span>14,7 % · 6 káuz</span></span></li></ul></div>
+      <div><h3>Uzavreté <small class="tnum">123,2 mil. €</small></h3><ul class="mrows"><li><span class="mk c0"></span><div><b>Právoplatné odsúdenie</b><span>aspoň jedna osoba právoplatne odsúdená</span></div><span class="mbar"><i class="c0" style="width:43.0%"></i></span><span class="mv tnum"><b>41,3 mil. €</b><span>10,0 % · 4 kauzy</span></span></li><li><span class="mk c1"></span><div><b>Oslobodenie</b><span>súd obžalovaných oslobodil</span></div><span class="mbar"><i class="c1" style="width:19.7%"></i></span><span class="mv tnum"><b>18,9 mil. €</b><span>4,6 % · 3 kauzy</span></span></li><li><span class="mk c2"></span><div><b>Zastavené alebo zrušené</b><span>zastavenie stíhania, zrušenie obvinenia (§ 363)</span></div><span class="mbar"><i class="c2" style="width:39.2%"></i></span><span class="mv tnum"><b>37,6 mil. €</b><span>9,1 % · 4 kauzy</span></span></li><li><span class="mk c3"></span><div><b>Premlčané alebo odložené</b><span>vec odložená alebo premlčaná</span></div><span class="mbar"><i class="c3" style="width:26.5%"></i></span><span class="mv tnum"><b>25,4 mil. €</b><span>6,2 % · 2 kauzy</span></span></li></ul></div>
+    </div>
+    <div class="nofin">
+      <span class="kicker">8 káuz nie je o peniazoch</span>
+      <span class="chips"><a href="#">Zásah do vyšetrovania · 3</a><a href="#">Zneužitie právomoci · 2</a><a href="#">Voľby a financovanie strán · 2</a><a href="#">Konflikt záujmov · 1</a></span>
+      <span class="fine" style="margin:0">Tieto kauzy nemajú sumu, ale svoj dopad, napríklad počet odvolaných ľudí alebo zrušených obvinení. Do grafu peňazí sa nezapočítavajú.</span>
+    </div>
+    <p class="fine">Kauza sa počíta podľa najďalšej fázy, ktorú dosiahla. Ak má viac obvinených s rôznym koncom, rozhoduje stav, ktorý sa týka najväčšej časti sumy. Pri spornej sume sa počíta najvyšší zdrojovaný údaj.</p>
+  </section>
+  <section class="block">
+    <div class="block-head"><h2>Čo sa chystá</h2><a class="more" href="#">Celý kalendár →</a></div>
+    <ol class="upcoming">
+      <li><span class="date tnum"><b>17.</b> nov 2026</span><span class="ev-dia" aria-hidden="true"></span><div><a href="#">Výsluch svedkov</a><span>Kauza Vzorová nemocnica · Špecializovaný trestný súd</span></div><span class="in">o 3 dni</span></li>
+      <li><span class="date tnum"><b>2.</b> dec 2026</span><span class="ev-dia" aria-hidden="true"></span><div><a href="#">Verejné zasadnutie o odvolaní</a><span>Kauza Pokusný tender IT · Najvyšší súd SR</span></div><span class="in">o 18 dní</span></li>
+      <li><span class="date tnum"><b>15.</b> dec 2026</span><span class="ev-dia" aria-hidden="true"></span><div><a href="#">Lehota na rozhodnutie prokurátora</a><span>Kauza Modelové pozemky · Generálna prokuratúra</span></div><span class="in">o 31 dní</span></li>
+      <li><span class="date tnum"><b>3.</b> feb 2027</span><span class="ev-dia" aria-hidden="true"></span><div><a href="#" data-go="osoba">Hlavné pojednávanie</a><span>Kauza Testovací most · Okresný súd Testovice</span></div><span class="in">o 81 dní</span></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><h2>Naposledy sa pohlo</h2><a class="more" href="#">Všetky kauzy →</a></div>
+    <div class="cases">
+      <article class="case">
+        <div class="pills"><span class="role r-obzalovany">obžaloba</span><span class="kind">verejné peniaze</span></div>
+        <h3><a href="#" data-go="osoba">Kauza Testovací most</a></h3>
+        <p>Predražená rekonštrukcia mosta, zákazku získala jediná firma TestBuild s.r.o.</p>
+        <div class="thread" aria-label="Prepojenia">
+          <span class="dot p" title="Ján Testovací"></span><span class="dot p"></span><span class="dot p"></span><span class="sq"></span><span class="sq"></span><i>3 ľudia · 2 firmy</i>
+        </div>
+        <div class="case-foot"><b class="tnum">12,5 mil. €</b><span class="sporne">sporné</span></div>
+        <div class="change"><span class="pulse"></span>pred 2 dňami · nový termín pojednávania (InfoSúd)</div>
+      </article>
+      <article class="case nonfin">
+        <div class="pills"><span class="role r-obvineny">vyšetrovanie</span><span class="kind">zásah do vyšetrovania</span></div>
+        <h3><a href="#">Kauza Odvolaní vyšetrovatelia</a></h3>
+        <p>Policajti, ktorí obvinili politikov, boli krátko nato odvolaní alebo preradení. Prokuratúra preveruje, či išlo o pomstu.</p>
+        <div class="thread"><span class="dot p"></span><span class="dot p"></span><span class="dot p"></span><span class="dot p"></span><span class="sq"></span><span class="sq"></span><i>7 ľudí · 2 inštitúcie</i></div>
+        <div class="case-foot impact"><b class="tnum">6</b><span class="imp-l">odvolaných vyšetrovateľov<br><small>2 zrušené obvinenia politikov</small></span></div>
+        <div class="change"><span class="pulse"></span>včera · nový článok (Vzorové noviny)</div>
+      </article>
+      <article class="case">
+        <div class="pills"><span class="role r-oslobodeny">oslobodené</span><span class="kind">verejné peniaze</span></div>
+        <h3><a href="#">Kauza Skúšobné dotácie</a></h3>
+        <p>Dotácie pre fiktívne podniky. Súd obžalovaných oslobodil, prokurátor sa neodvolal.</p>
+        <div class="thread"><span class="dot p"></span><span class="dot p"></span><span class="sq"></span><i>2 ľudia · 1 firma</i></div>
+        <div class="case-foot"><b class="tnum">890 tis. €</b><span class="closed">uzavretá</span></div>
+        <div class="change">pred 3 týždňami · právoplatnosť rozsudku (rozhodnutia súdov)</div>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="block">
+    <div class="block-head"><h2>O čom sa najviac píše</h2>
+      <div class="seg" role="group" aria-label="Obdobie"><button type="button" aria-pressed="true">30 dní</button><button type="button" aria-pressed="false">12 mesiacov</button><button type="button" aria-pressed="false">Celkovo</button></div>
+    </div>
+    <p class="hint-lg">Poradie podľa počtu článkov a úradných dokumentov za obdobie. Počíta sa aj počet rôznych médií, aby kauzu nevytiahlo jedno médium, ktoré o nej píše každý deň. Krivka ukazuje 24 mesiacov.</p>
+    <ol class="top"><li><span class="rk tnum">1</span><div class="tt"><a href="#">Kauza Odvolaní vyšetrovatelia</a><span>zásah do vyšetrovania · vyšetrovanie</span></div><svg class="spark" viewBox="0 0 180 36" width="180" height="36" aria-hidden="true"><polygon points="0,36 0.0,34.0 7.8,34.0 15.7,34.0 23.5,34.0 31.3,34.0 39.1,34.0 47.0,34.0 54.8,34.0 62.6,34.0 70.4,34.0 78.3,34.0 86.1,34.0 93.9,34.0 101.7,34.0 109.6,34.0 117.4,34.0 125.2,34.0 133.0,34.0 140.9,32.6 148.7,31.3 156.5,25.8 164.3,21.7 172.2,14.9 180.0,4.0 180,36" class="sa"/><polyline points="0.0,34.0 7.8,34.0 15.7,34.0 23.5,34.0 31.3,34.0 39.1,34.0 47.0,34.0 54.8,34.0 62.6,34.0 70.4,34.0 78.3,34.0 86.1,34.0 93.9,34.0 101.7,34.0 109.6,34.0 117.4,34.0 125.2,34.0 133.0,34.0 140.9,32.6 148.7,31.3 156.5,25.8 164.3,21.7 172.2,14.9 180.0,4.0" class="sl"/><circle cx="180.0" cy="4.0" r="3" class="sd"/></svg><span class="tc tnum"><b>38 článkov</b><span>11 médií · ▲ +180 %</span></span></li><li><span class="rk tnum">2</span><div class="tt"><a href="#">Kauza Vzorová nemocnica</a><span>verejné peniaze · 48 mil. € · obvinenie</span></div><svg class="spark" viewBox="0 0 180 36" width="180" height="36" aria-hidden="true"><polygon points="0,36 0.0,30.2 7.8,28.4 15.7,32.1 23.5,30.2 31.3,26.5 39.1,19.0 47.0,11.5 54.8,17.1 62.6,22.8 70.4,24.6 78.3,26.5 86.1,28.4 93.9,26.5 101.7,22.8 109.6,24.6 117.4,26.5 125.2,28.4 133.0,20.9 140.9,17.1 148.7,19.0 156.5,22.8 164.3,24.6 172.2,17.1 180.0,4.0 180,36" class="sa"/><polyline points="0.0,30.2 7.8,28.4 15.7,32.1 23.5,30.2 31.3,26.5 39.1,19.0 47.0,11.5 54.8,17.1 62.6,22.8 70.4,24.6 78.3,26.5 86.1,28.4 93.9,26.5 101.7,22.8 109.6,24.6 117.4,26.5 125.2,28.4 133.0,20.9 140.9,17.1 148.7,19.0 156.5,22.8 164.3,24.6 172.2,17.1 180.0,4.0" class="sl"/><circle cx="180.0" cy="4.0" r="3" class="sd"/></svg><span class="tc tnum"><b>21 článkov</b><span>8 médií · ▲ +60 %</span></span></li><li><span class="rk tnum">3</span><div class="tt"><a href="#">Kauza Testovací most</a><span>verejné peniaze · 12,5 mil. € · obžaloba</span></div><svg class="spark" viewBox="0 0 180 36" width="180" height="36" aria-hidden="true"><polygon points="0,36 0.0,34.0 7.8,34.0 15.7,31.9 23.5,21.1 31.3,4.0 39.1,14.7 47.0,23.3 54.8,27.6 62.6,29.7 70.4,29.7 78.3,31.9 86.1,31.9 93.9,25.4 101.7,16.9 109.6,27.6 117.4,29.7 125.2,31.9 133.0,31.9 140.9,31.9 148.7,29.7 156.5,31.9 164.3,27.6 172.2,23.3 180.0,14.7 180,36" class="sa"/><polyline points="0.0,34.0 7.8,34.0 15.7,31.9 23.5,21.1 31.3,4.0 39.1,14.7 47.0,23.3 54.8,27.6 62.6,29.7 70.4,29.7 78.3,31.9 86.1,31.9 93.9,25.4 101.7,16.9 109.6,27.6 117.4,29.7 125.2,31.9 133.0,31.9 140.9,31.9 148.7,29.7 156.5,31.9 164.3,27.6 172.2,23.3 180.0,14.7" class="sl"/><circle cx="180.0" cy="14.7" r="3" class="sd"/></svg><span class="tc tnum"><b>12 článkov</b><span>6 médií · ▲ +80 %</span></span></li><li><span class="rk tnum">4</span><div class="tt"><a href="#">Kauza Pokusný tender IT</a><span>verejné peniaze · 31,2 mil. € · obžaloba a súd</span></div><svg class="spark" viewBox="0 0 180 36" width="180" height="36" aria-hidden="true"><polygon points="0,36 0.0,12.6 7.8,4.0 15.7,14.7 23.5,19.0 31.3,23.3 39.1,25.4 47.0,25.4 54.8,27.6 62.6,27.6 70.4,29.7 78.3,29.7 86.1,27.6 93.9,29.7 101.7,29.7 109.6,31.9 117.4,29.7 125.2,31.9 133.0,31.9 140.9,29.7 148.7,27.6 156.5,29.7 164.3,29.7 172.2,27.6 180.0,25.4 180,36" class="sa"/><polyline points="0.0,12.6 7.8,4.0 15.7,14.7 23.5,19.0 31.3,23.3 39.1,25.4 47.0,25.4 54.8,27.6 62.6,27.6 70.4,29.7 78.3,29.7 86.1,27.6 93.9,29.7 101.7,29.7 109.6,31.9 117.4,29.7 125.2,31.9 133.0,31.9 140.9,29.7 148.7,27.6 156.5,29.7 164.3,29.7 172.2,27.6 180.0,25.4" class="sl"/><circle cx="180.0" cy="25.4" r="3" class="sd"/></svg><span class="tc tnum"><b>7 článkov</b><span>5 médií · ▲ +33 %</span></span></li><li><span class="rk tnum">5</span><div class="tt"><a href="#">Kauza Voľby bez faktúr</a><span>voľby a financovanie strán · vyšetrovanie</span></div><svg class="spark" viewBox="0 0 180 36" width="180" height="36" aria-hidden="true"><polygon points="0,36 0.0,34.0 7.8,34.0 15.7,34.0 23.5,34.0 31.3,34.0 39.1,34.0 47.0,25.8 54.8,12.2 62.6,4.0 70.4,14.9 78.3,20.4 86.1,23.1 93.9,25.8 101.7,25.8 109.6,28.5 117.4,28.5 125.2,28.5 133.0,31.3 140.9,28.5 148.7,31.3 156.5,28.5 164.3,31.3 172.2,28.5 180.0,25.8 180,36" class="sa"/><polyline points="0.0,34.0 7.8,34.0 15.7,34.0 23.5,34.0 31.3,34.0 39.1,34.0 47.0,25.8 54.8,12.2 62.6,4.0 70.4,14.9 78.3,20.4 86.1,23.1 93.9,25.8 101.7,25.8 109.6,28.5 117.4,28.5 125.2,28.5 133.0,31.3 140.9,28.5 148.7,31.3 156.5,28.5 164.3,31.3 172.2,28.5 180.0,25.8" class="sl"/><circle cx="180.0" cy="25.8" r="3" class="sd"/></svg><span class="tc tnum"><b>5 článkov</b><span>4 médií · ▲ +50 %</span></span></li></ol>
+  </section>
+
+  <section class="block forgot">
+    <div class="block-head"><h2>Zabudnuté, ale nevyriešené</h2><a class="more" href="#">Všetky zabudnuté →</a></div>
+    <p class="hint-lg">Kauzy, o ktorých sa kedysi veľa písalo, médiá o nich mlčia viac ako rok a úradne stále nie sú uzavreté. Presne kvôli nim register existuje.</p>
+    <ul class="fg-list"><li><div class="tt"><a href="#">Kauza Príkladné emisie</a><span>64 mil. € · vyšetrovanie</span></div><svg class="spark" viewBox="0 0 140 30" width="140" height="30" aria-hidden="true"><polygon points="0,30 0.0,16.0 6.1,10.4 12.2,4.0 18.3,12.8 24.3,19.2 30.4,22.0 36.5,24.4 42.6,25.6 48.7,26.4 54.8,26.8 60.9,27.2 67.0,27.6 73.0,27.6 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0 140,30" class="sa"/><polyline points="0.0,16.0 6.1,10.4 12.2,4.0 18.3,12.8 24.3,19.2 30.4,22.0 36.5,24.4 42.6,25.6 48.7,26.4 54.8,26.8 60.9,27.2 67.0,27.6 73.0,27.6 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0" class="sl"/><circle cx="140.0" cy="28.0" r="3" class="sd"/></svg><div class="fg"><b>Posledný článok pred 19 mesiacmi</b><span>412 článkov v rokoch 2021–2023</span></div><button type="button" class="mini-btn">Sledovať</button></li><li><div class="tt"><a href="#">Kauza Modelové pozemky</a><span>7,4 mil. € · obvinenie</span></div><svg class="spark" viewBox="0 0 140 30" width="140" height="30" aria-hidden="true"><polygon points="0,30 0.0,28.0 6.1,22.7 12.2,12.0 18.3,4.0 24.3,14.7 30.4,18.7 36.5,21.3 42.6,24.0 48.7,25.3 54.8,25.3 60.9,26.7 67.0,28.0 73.0,28.0 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0 140,30" class="sa"/><polyline points="0.0,28.0 6.1,22.7 12.2,12.0 18.3,4.0 24.3,14.7 30.4,18.7 36.5,21.3 42.6,24.0 48.7,25.3 54.8,25.3 60.9,26.7 67.0,28.0 73.0,28.0 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0" class="sl"/><circle cx="140.0" cy="28.0" r="3" class="sd"/></svg><div class="fg"><b>Posledný článok pred 14 mesiacmi</b><span>96 článkov v rokoch 2023–2024</span></div><button type="button" class="mini-btn">Sledovať</button></li><li><div class="tt"><a href="#">Kauza Tichý odposluch</a><span>zneužitie právomoci · obžaloba</span></div><svg class="spark" viewBox="0 0 140 30" width="140" height="30" aria-hidden="true"><polygon points="0,30 0.0,28.0 6.1,28.0 12.2,26.6 18.3,14.3 24.3,4.0 30.4,15.7 36.5,21.8 42.6,24.6 48.7,25.9 54.8,26.6 60.9,27.3 67.0,27.3 73.0,28.0 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0 140,30" class="sa"/><polyline points="0.0,28.0 6.1,28.0 12.2,26.6 18.3,14.3 24.3,4.0 30.4,15.7 36.5,21.8 42.6,24.6 48.7,25.9 54.8,26.6 60.9,27.3 67.0,27.3 73.0,28.0 79.1,28.0 85.2,28.0 91.3,28.0 97.4,28.0 103.5,28.0 109.6,28.0 115.7,28.0 121.7,28.0 127.8,28.0 133.9,28.0 140.0,28.0" class="sl"/><circle cx="140.0" cy="28.0" r="3" class="sd"/></svg><div class="fg"><b>Posledný článok pred 13 mesiacmi</b><span>143 článkov v roku 2024</span></div><button type="button" class="mini-btn">Sledovať</button></li></ul>
+  </section>
+  <section class="block two">
+    <div>
+      <div class="block-head"><h2>Najväčšie sumy</h2></div>
+      <ul class="bars tnum">
+        <li><a href="#">Príkladné emisie</a><span class="b"><i style="width:100%"></i></span><b>64,0 mil. €</b></li>
+        <li><a href="#">Vzorová nemocnica</a><span class="b"><i style="width:75%"></i></span><b>48,0 mil. €</b></li>
+        <li><a href="#">Pokusný tender IT</a><span class="b"><i style="width:48.8%"></i></span><b>31,2 mil. €</b></li>
+        <li><a href="#" data-go="osoba">Testovací most</a><span class="b"><i style="width:19.5%"></i></span><b>12,5 mil. €</b></li>
+        <li><a href="#">Modelové pozemky</a><span class="b"><i style="width:11.6%"></i></span><b>7,4 mil. €</b></li>
+      </ul>
+      <p class="fine">Suma podľa najvyššieho zdrojovaného údaja. Pri spornej sume sú na stránke kauzy uvedené všetky verzie.</p>
+    </div>
+    <div>
+      <div class="block-head"><h2>Mená v najviac kauzách</h2></div>
+      <ol class="names">
+        <li><span class="dot p big"></span><div><a href="#">Oto Pokusný</a><span>podnikateľ · Vzorová Invest, Pokus Group</span></div><b class="tnum">4 kauzy</b></li>
+        <li><span class="dot p big"></span><div><a href="#">Marta Príkladná</a><span>bývalá štátna tajomníčka</span></div><b class="tnum">3 kauzy</b></li>
+        <li><span class="dot p big"></span><div><a href="#" data-go="osoba">Ján Testovací</a><span>Strana Skúšobná · TestBuild</span></div><b class="tnum">2 kauzy</b></li>
+        <li><span class="sq big"></span><div><a href="#">TestBuild s.r.o.</a><span>firma · 6 ľudí v okolí</span></div><b class="tnum">2 kauzy</b></li>
+      </ol>
+      <p class="fine">Výskyt v kauze nie je vina. Rola sa zobrazuje pri každom mene na stránke osoby.</p>
+    </div>
+  </section>
+
+  <section class="follow">
+    <div>
+      <h2>Sleduj kauzu, osobu alebo firmu</h2>
+      <p>Keď sa niečo pohne, napríklad nový termín, obvinenie, rozsudok alebo článok, príde ti e-mail. Bezplatne.</p>
+    </div>
+    <form onsubmit="event.preventDefault()"><label for="em" class="sr">E-mail</label><input id="em" type="email" placeholder="tvoj@email.sk"><button type="submit">Začať sledovať</button></form>
+  </section>
+</main>
+
+<main class="wrap" data-view="osoba">
+  <div class="crumbs">Ľudia / Ján Testovací</div>
+  <section class="head">
+    <div>
+      <span class="kicker">Osoba · fiktívne testovacie dáta</span>
+      <h1>Ján Testovací</h1>
+      <p class="lead">Bývalý konateľ stavebnej firmy TestBuild s.r.o. a člen Strany Skúšobnej. Obžalovaný v kauze Testovací most. Pokiaľ súd nerozhodne právoplatne, platí prezumpcia neviny.</p>
+    </div>
+    <div class="stats tnum">
+      <div><b>2</b><span>kauzy</span></div>
+      <div><b>3</b><span>firmy a strany</span></div>
+      <div><b>4</b><span>ľudia v okolí</span></div>
+      <div><b>28</b><span>zdrojov</span></div>
+    </div>
+  </section>
+
+  <nav class="tabs" aria-label="Pohľady na prepojenia">
+    <a href="#mapa" class="on">Mapa<small>1 krok</small></a>
+    <a href="#cas">V čase<small>2016–2027</small></a>
+    <a href="#siet">Sieť<small>2 kroky</small></a>
+    <a href="#zdroje">Zdroje<small>28</small></a>
+  </nav>
+
+  <!-- MAPA -->
+  <section class="panel" id="mapa">
+    <div class="panel-head">
+      <div>
+        <h2>Mapa prepojení</h2>
+        <p class="hint">Vľavo firmy a strany, vpravo kauzy, dole ľudia, s ktorými sa stretáva. Pri každej čiare je rola, obdobie a číslo zdroja. Kliknutím na uzol sa presunieš na jeho mapu.</p>
+      </div>
+      <div class="legend">
+        <span><i class="sw"></i>platí</span>
+        <span><i class="sw e"></i>ukončené</span>
+        <span><i class="sw d"></i>odvodené z registra</span>
+        <span><i class="sw c"></i>rola v kauze</span>
+      </div>
+    </div>
+    <div class="figure">
+      <svg viewBox="0 0 1040 470" width="100%" style="min-width:820px" role="img" aria-label="Mapa prepojení Jána Testovacieho">
+        <defs>
+          <style>
+            .lab{font-size:12px;fill:var(--muted)}
+            .nm{font-size:14px;font-weight:600;fill:var(--ink)}
+            .sub{font-size:11.5px;fill:var(--muted)}
+            .col{font:600 11px var(--mono);letter-spacing:.08em;fill:var(--muted)}
+            .n{fill:var(--surface);stroke:var(--line);stroke-width:1}
+            .sr{font:500 10.5px var(--mono);fill:var(--accent)}
+          </style>
+        </defs>
+        <text x="20" y="22" class="col">FIRMY A STRANY</text>
+        <text x="1020" y="22" class="col" text-anchor="end">KAUZY</text>
+
+        <!-- čiary org -->
+        <path d="M268 78 C 360 78, 380 205, 440 215" fill="none" stroke="var(--org)" stroke-width="2" stroke-dasharray="6 4" opacity=".55"/>
+        <path d="M268 178 C 350 178, 380 222, 440 225" fill="none" stroke="var(--org)" stroke-width="2"/>
+        <path d="M268 278 C 350 278, 380 240, 440 236" fill="none" stroke="var(--org)" stroke-width="2"/>
+        <text x="300" y="104" class="lab">konateľ · 3/2019–1/2024</text><text x="300" y="118" class="sr">odvodené · [4]</text>
+        <text x="300" y="168" class="lab">člen · od 2018</text><text x="398" y="168" class="sr">[2]</text>
+        <text x="300" y="296" class="lab">spoločník 40 % · od 9/2016</text><text x="300" y="310" class="sr">[5]</text>
+
+        <!-- čiary kauzy -->
+        <path d="M600 215 C 660 205, 690 110, 772 110" fill="none" stroke="var(--accent)" stroke-width="2.4"/>
+        <path d="M600 236 C 660 246, 690 300, 772 300" fill="none" stroke="var(--accent)" stroke-width="2" opacity=".4"/>
+        <text x="640" y="140" class="lab">podozrivý 3/2024–1/2025</text>
+
+        <!-- uzly firmy -->
+        <g><rect x="20" y="52" width="248" height="56" rx="6" class="n"/><rect x="34" y="72" width="14" height="14" fill="var(--org)" opacity=".55"/>
+          <text x="60" y="76" class="nm">TestBuild s.r.o.</text><text x="60" y="94" class="sub">IČO 12 345 678 · stavebníctvo</text></g>
+        <g><rect x="20" y="152" width="248" height="56" rx="6" class="n"/><rect x="34" y="172" width="14" height="14" fill="var(--org)"/>
+          <text x="60" y="176" class="nm">Strana Skúšobná</text><text x="60" y="194" class="sub">politická strana</text></g>
+        <g><rect x="20" y="252" width="248" height="56" rx="6" class="n"/><rect x="34" y="272" width="14" height="14" fill="var(--org)"/>
+          <text x="60" y="276" class="nm">Vzorová Invest a.s.</text><text x="60" y="294" class="sub">IČO 87 654 321 · holding</text></g>
+
+        <!-- osoba -->
+        <g><rect x="440" y="186" width="160" height="78" rx="8" fill="var(--ink)"/>
+          <circle cx="520" cy="186" r="9" fill="var(--ink)" stroke="var(--surface)" stroke-width="3"/>
+          <text x="520" y="222" text-anchor="middle" style="font:700 16px var(--display);fill:var(--bg)">Ján Testovací</text>
+          <text x="520" y="242" text-anchor="middle" style="font:400 11.5px var(--mono);fill:var(--bg);opacity:.7">nar. 1971</text></g>
+
+        <!-- kauzy -->
+        <g><rect x="772" y="70" width="248" height="88" rx="6" class="n" style="stroke:var(--accent)"/>
+          <rect x="787" y="88" width="12" height="12" transform="rotate(45 793 94)" fill="var(--accent)"/>
+          <text x="810" y="98" class="nm">Kauza Testovací most</text>
+          <text x="810" y="116" class="sub">12,5 mil. € · otvorená · obžaloba</text>
+          <rect x="810" y="126" width="94" height="20" rx="3" fill="var(--accent-soft)" stroke="var(--accent)"/>
+          <text x="857" y="140" text-anchor="middle" style="font:600 10.5px var(--mono);fill:var(--accent)">OBŽALOVANÝ</text>
+          <text x="914" y="140" class="sr">od 1/2025 · [1]</text></g>
+        <g opacity=".75"><rect x="772" y="262" width="248" height="76" rx="6" class="n"/>
+          <rect x="787" y="280" width="12" height="12" transform="rotate(45 793 286)" fill="var(--accent)" opacity=".5"/>
+          <text x="810" y="290" class="nm">Kauza Skúšobné dotácie</text>
+          <text x="810" y="308" class="sub">890 tis. € · uzavretá · oslobodené</text>
+          <text x="810" y="327" style="font:600 10.5px var(--mono);fill:var(--muted)">SVEDOK · 2023 · ukončené</text></g>
+
+        <!-- ľudia v okolí -->
+        <text x="20" y="378" class="col">ĽUDIA V OKOLÍ · cez spoločnú firmu alebo kauzu</text>
+        <g>
+          <rect x="20" y="394" width="236" height="56" rx="6" class="n"/><circle cx="41" cy="422" r="8" fill="var(--ink)"/>
+          <text x="58" y="417" class="nm">Eva Skúšobná</text><text x="58" y="435" class="sub">svedok v kauze most</text>
+          <rect x="272" y="394" width="236" height="56" rx="6" class="n"/><circle cx="293" cy="422" r="8" fill="var(--ink)"/>
+          <text x="310" y="417" class="nm">Marta Príkladná</text><text x="310" y="435" class="sub">spoločníčka Vzorová Invest</text>
+          <rect x="524" y="394" width="236" height="56" rx="6" class="n"/><circle cx="545" cy="422" r="8" fill="var(--ink)"/>
+          <text x="562" y="417" class="nm">Peter Vzorka</text><text x="562" y="435" class="sub">vyšetrovateľ v kauze most</text>
+          <rect x="776" y="394" width="244" height="56" rx="6" class="n"/><circle cx="797" cy="422" r="8" fill="var(--ink)"/>
+          <text x="814" y="417" class="nm">Igor Modelový</text><text x="814" y="435" class="sub">nový konateľ TestBuild od 2/2024</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- V ČASE -->
+  <section class="panel" id="cas">
+    <div class="panel-head">
+      <div>
+        <h2>Prepojenia v čase</h2>
+        <p class="hint">Riadok pre každú firmu, stranu a kauzu. Pruh ukazuje, odkedy dokedy väzba trvala. Hneď vidno, čo sa prekrývalo.</p>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="border-color:var(--org);border-width:6px 0 0"></i>funkcia vo firme/strane</span>
+        <span><i class="sw" style="border-color:var(--accent);border-width:6px 0 0"></i>rola v kauze</span>
+        <span>◇ udalosť</span>
+      </div>
+    </div>
+    <div class="figure">
+      <div class="tl" id="tl">
+        <div></div><div class="axis" id="axis"></div>
+
+        <div class="lbl"><b>TestBuild s.r.o.</b><span>konateľ · odvodené [4]</span></div>
+        <div class="track"><span class="bar derived ended" data-f="2019.17" data-t="2024.08"></span>
+          <span class="ev" data-at="2023.45"></span><span class="ev-l" data-at="2023.45">zákazka most 6/2023 [3]</span></div>
+
+        <div class="lbl"><b>Strana Skúšobná</b><span>člen [2]</span></div>
+        <div class="track"><span class="bar open" data-f="2018" data-t="2026.87"></span></div>
+
+        <div class="lbl"><b>Vzorová Invest a.s.</b><span>spoločník 40 % [5]</span></div>
+        <div class="track"><span class="bar open" data-f="2016.67" data-t="2026.87"></span></div>
+
+        <div class="lbl"><b>Kauza Testovací most</b><span>podozrivý → obžalovaný [1]</span></div>
+        <div class="track">
+          <span class="bar case ended" data-f="2024.19" data-t="2025.05"></span>
+          <span class="bar case open" data-f="2025.05" data-t="2026.87"></span>
+          <span class="ev" data-at="2024.19"></span><span class="ev-l" data-at="2024.19">obvinenie</span>
+          <span class="ev" data-at="2025.05"></span><span class="ev-l" data-at="2025.05" style="top:0">obžaloba</span>
+          <span class="ev future" data-at="2027.09"></span><span class="ev-l" data-at="2027.09" style="top:0">pojednávanie 3. 2.</span>
+        </div>
+
+        <div class="lbl"><b>Kauza Skúšobné dotácie</b><span>svedok [6]</span></div>
+        <div class="track"><span class="bar case ended" data-f="2023.3" data-t="2023.8"></span>
+          <span class="ev" data-at="2024.6"></span><span class="ev-l" data-at="2024.6">oslobodenie obžalovaných</span></div>
+      </div>
+    </div>
+    <div class="insight"><b>Prekrytie</b><span>Firma TestBuild získala zákazku na most v 6/2023, v čase, keď bol podľa obchodného registra jej konateľom. Je to <u>odvodený údaj</u>: dva zdroje spojil register, nie médiá. <a class="src" href="#">[3]</a> <a class="src" href="#">[4]</a></span></div>
+  </section>
+
+  <!-- SIEŤ -->
+  <section class="panel" id="siet">
+    <div class="panel-head">
+      <div>
+        <h2>Sieť do 2 krokov</h2>
+        <p class="hint">Všetci a všetko do dvoch krokov od Jána. V ostrej verzii sa dá ťahať, zoomovať a filtrovať (len platné, bez odvodených, len kauzy).</p>
+      </div>
+      <div class="legend">
+        <span>● osoba</span><span>■ firma / strana</span><span>◆ kauza</span>
+      </div>
+    </div>
+    <div class="figure">
+      <svg viewBox="0 0 1040 440" width="100%" style="min-width:820px" role="img" aria-label="Sieť prepojení do dvoch krokov">
+        <g stroke="var(--line)" stroke-width="1.6" fill="none">
+          <line x1="520" y1="220" x2="300" y2="110" stroke="var(--org)" stroke-dasharray="5 4" opacity=".6"/>
+          <line x1="520" y1="220" x2="290" y2="300" stroke="var(--org)"/>
+          <line x1="520" y1="220" x2="520" y2="70" stroke="var(--org)"/>
+          <line x1="520" y1="220" x2="760" y2="150" stroke="var(--accent)" stroke-width="2.4"/>
+          <line x1="520" y1="220" x2="740" y2="340" stroke="var(--accent)" opacity=".4"/>
+          <line x1="300" y1="110" x2="110" y2="70"/>
+          <line x1="300" y1="110" x2="760" y2="150"/>
+          <line x1="290" y1="300" x2="110" y2="370"/>
+          <line x1="760" y1="150" x2="950" y2="80" stroke="var(--accent)" opacity=".6"/>
+          <line x1="760" y1="150" x2="960" y2="220" stroke="var(--accent)" opacity=".6"/>
+          <line x1="760" y1="150" x2="620" y2="40" />
+          <line x1="740" y1="340" x2="940" y2="380" stroke="var(--accent)" opacity=".4"/>
+          <line x1="760" y1="150" x2="560" y2="400" stroke="var(--accent)" opacity=".6"/>
+        </g>
+        <g style="font:12px var(--body);fill:var(--ink)">
+          <circle cx="520" cy="220" r="20" fill="var(--ink)"/><text x="520" y="258" text-anchor="middle" style="font-weight:700">Ján Testovací</text>
+          <rect x="290" y="100" width="20" height="20" fill="var(--org)" opacity=".6"/><text x="300" y="138" text-anchor="middle">TestBuild</text>
+          <rect x="280" y="290" width="20" height="20" fill="var(--org)"/><text x="290" y="328" text-anchor="middle">Vzorová Invest</text>
+          <rect x="510" y="60" width="20" height="20" fill="var(--org)"/><text x="545" y="74">Strana Skúšobná</text>
+          <rect x="746" y="136" width="28" height="28" transform="rotate(45 760 150)" fill="var(--accent)"/><text x="760" y="190" text-anchor="middle" style="font-weight:600">Testovací most</text>
+          <rect x="730" y="330" width="20" height="20" transform="rotate(45 740 340)" fill="var(--accent)" opacity=".5"/><text x="740" y="372" text-anchor="middle">Skúšobné dotácie</text>
+          <circle cx="110" cy="70" r="9" fill="var(--ink)"/><text x="110" y="96" text-anchor="middle">Igor Modelový</text>
+          <circle cx="110" cy="370" r="9" fill="var(--ink)"/><text x="110" y="396" text-anchor="middle">Marta Príkladná</text>
+          <circle cx="950" cy="80" r="9" fill="var(--ink)"/><text x="950" y="106" text-anchor="middle">Eva Skúšobná</text>
+          <circle cx="960" cy="220" r="9" fill="var(--ink)"/><text x="960" y="246" text-anchor="middle">Peter Vzorka</text>
+          <rect x="610" y="30" width="20" height="20" fill="var(--org)"/><text x="660" y="44">Mesto Testovice</text>
+          <circle cx="940" cy="380" r="9" fill="var(--ink)"/><text x="940" y="406" text-anchor="middle">Oto Pokusný</text>
+          <circle cx="560" cy="400" r="9" fill="var(--ink)"/><text x="560" y="426" text-anchor="middle">sudca JUDr. Vzor</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ZDROJE -->
+  <section class="panel" id="zdroje">
+    <div class="panel-head">
+      <div>
+        <h2>Všetky zdroje</h2>
+        <p class="hint">Každý článok a úradný dokument, v ktorom sa Ján Testovací spomína. Pri každom je uvedené, ktorý údaj na stránke podopiera. Úradné dokumenty sú pri rozpore nadradené článkom.</p>
+      </div>
+    </div>
+    <div class="src-tools">
+      <div class="seg" role="group" aria-label="Typ zdroja">
+        <button type="button" data-type="all" aria-pressed="true">Všetky</button>
+        <button type="button" data-type="official" aria-pressed="false">Úradné dokumenty</button>
+        <button type="button" data-type="media" aria-pressed="false">Médiá</button>
+      </div>
+      <label class="sel">Zoradiť
+        <select id="src-sort"><option value="desc">od najnovších</option><option value="asc">od najstarších</option></select>
+      </label>
+      <label class="sel">Kauza
+        <select id="src-case"><option value="">všetky</option><option>Testovací most</option><option>Skúšobné dotácie</option><option>bez kauzy</option></select>
+      </label>
+    </div>
+    <ol class="src-list" id="src-list"></ol>
+    <div class="pager">
+      <span id="src-count" class="tnum"></span>
+      <nav aria-label="Stránkovanie zdrojov" id="src-pages"></nav>
+    </div>
+  </section>
+</main>
+
+<p class="note" style="margin-top:28px">Všetky mená, firmy, médiá a čísla sú fiktívne testovacie dáta.</p>
+<footer class="foot"><div class="wrap">
+  <div><svg width="150" height="33" viewBox="0 0 260 56" aria-label="dosleduj.to"><text x="2" y="34" font-family="'Bricolage Grotesque',sans-serif" font-weight="800" font-size="31" letter-spacing="-1.4" fill="#fff">dosleduj.to</text><path d="M14 44 C 60 54, 110 34, 150 46 S 205 40, 222 30" fill="none" stroke="#ff4a40" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="44" r="4.5" fill="#ff4a40"/><circle cx="222" cy="30" r="4.5" fill="#ff4a40"/></svg>
+  <p style="margin-top:10px">Verejná pamäť slovenských káuz. Usporadúvame to, čo zverejnili médiá a úrady. Nové tvrdenia o ľuďoch nevytvárame.</p></div>
+  <div><h4>Pravidlá</h4><p>Údaj bez zdroja nezverejníme. Platí prezumpcia neviny: podozrivý, obvinený a obžalovaný nie je odsúdený. Oslobodenie je rovnako viditeľné ako obvinenie.</p></div>
+  <div><h4>Oprava</h4><p>Našli ste chybu alebo ste dotknutá osoba? Pošlite podnet so zdrojom, vybavíme ho do 7 dní.</p><p style="margin-top:10px"><a href="#">Poslať podnet →</a></p></div>
+</div></footer>
+
+
+<script>
+(function(){
+  var MED=["Testoviny.sk","Denník Skúška","Vzorové noviny","Rádio Pokus","Týždenník Model"];
+  var OFF=[
+    ["Uznesenie o podaní obžaloby, sp. zn. 2T/45/2025","Okresný súd Testovice","2025-01-20","Testovací most",["obžalovaný od 1/2025"]],
+    ["Výpis z obchodného registra – TestBuild s.r.o.","Obchodný register SR","2024-02-02","",["konateľ TestBuild 2019–2024"]],
+    ["Zmluva o dielo č. 14/2023 – rekonštrukcia mosta","Centrálny register zmlúv","2023-06-12","Testovací most",["suma 12,5 mil. €","zákazka 6/2023"]],
+    ["Výpis z obchodného registra – Vzorová Invest a.s.","Obchodný register SR","2025-09-30","",["spoločník Vzorová Invest"]],
+    ["Výročná správa Strany Skúšobnej 2024","Register politických strán","2025-04-30","",["člen strany"]],
+    ["Rozsudok, sp. zn. 3T/11/2024","Špecializovaný trestný súd","2024-08-07","Skúšobné dotácie",["oslobodenie obžalovaných"]],
+    ["Termín hlavného pojednávania – InfoSúd","InfoSúd","2026-10-28","Testovací most",["pojednávanie 3. 2. 2027"]]
+  ];
+  var MEDIA=[
+    ["Polícia obvinila bývalého konateľa stavebnej firmy","2024-03-12","Testovací most",["podozrivý 3/2024"]],
+    ["Most za 12,5 milióna: prečo bol jediný uchádzač","2024-02-29","Testovací most",["suma 12,5 mil. €"]],
+    ["Prokurátor podal obžalobu v kauze mosta","2025-01-21","Testovací most",["obžalovaný od 1/2025"]],
+    ["Skutočná cena mosta bola 9,8 milióna, tvrdí kontrola","2024-05-03","Testovací most",["sporná suma 9,8 mil. €"]],
+    ["Kto je Ján Testovací: od stavbára k politike","2024-03-15","",["krátky životopis","člen strany"]],
+    ["Svedkovia v kauze dotácií vypovedali","2023-06-02","Skúšobné dotácie",["svedok 2023"]],
+    ["Súd oslobodil obžalovaných v kauze dotácií","2024-08-08","Skúšobné dotácie",["oslobodenie obžalovaných"]],
+    ["Firma od mosta mení konateľa","2024-02-05","Testovací most",["konateľ TestBuild 2019–2024"]],
+    ["Vzorová Invest skupuje pozemky pri obchvate","2022-11-14","",["spoločník Vzorová Invest"]],
+    ["Strana Skúšobná na kongrese potvrdila vedenie","2018-05-20","",["člen strany"]],
+    ["Pojednávanie v kauze mosta odročili","2026-09-16","Testovací most",["pojednávanie 3. 2. 2027"]],
+    ["Testovací: Obvinenie je politicky motivované","2024-03-13","Testovací most",["vyjadrenie dotknutej osoby"]],
+    ["Mesto Testovice chce peniaze za most späť","2025-03-02","Testovací most",["nárok mesta"]],
+    ["Eva Skúšobná: O predražení som informovala vedenie","2024-04-10","Testovací most",["svedok Eva Skúšobná"]],
+    ["NKÚ: zákazka na most mala viacero chýb","2024-02-28","Testovací most",["kontrola 2/2024"]],
+    ["Konateľ TestBuild sa vzdal funkcie","2024-01-31","",["konateľ TestBuild 2019–2024"]],
+    ["Kauza mosta pokračuje, súd predvolal svedkov","2026-06-10","Testovací most",["pojednávanie 3. 2. 2027"]],
+    ["Dotácie pod lupou: kto rozhodoval","2023-03-22","Skúšobné dotácie",["svedok 2023"]],
+    ["Testovací v ankete: Most bol potrebný","2023-07-01","",["vyjadrenie dotknutej osoby"]],
+    ["Obžaloba v kauze mosta: čo v nej je","2025-01-24","Testovací most",["obžalovaný od 1/2025"]],
+    ["Vzorová Invest zvýšila zisk","2025-06-18","",["spoločník Vzorová Invest"]]
+  ];
+  var all=OFF.map(function(o){return {t:o[0],p:o[1],d:o[2],c:o[3],u:o[4],off:true,arch:true};})
+    .concat(MEDIA.map(function(m,i){return {t:m[0],p:MED[i%MED.length],d:m[1],c:m[2],u:m[3],off:false,arch:i%3===0};}));
+  var st={type:'all',sort:'desc',kauza:'',page:1},PER=8;
+  var list=document.getElementById('src-list'),pages=document.getElementById('src-pages'),count=document.getElementById('src-count');
+  function fmt(d){var p=d.split('-');return (+p[2])+'. '+(+p[1])+'. '+p[0];}
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function render(){
+    var rows=all.filter(function(s){
+      if(st.type==='official'&&!s.off)return false;
+      if(st.type==='media'&&s.off)return false;
+      if(st.kauza==='bez kauzy')return !s.c;
+      if(st.kauza&&s.c!==st.kauza)return false;
+      return true;
+    }).sort(function(a,b){return st.sort==='desc'?(a.d<b.d?1:-1):(a.d>b.d?1:-1);});
+    var n=rows.length,np=Math.max(1,Math.ceil(n/PER));
+    if(st.page>np)st.page=np;
+    var from=(st.page-1)*PER,slice=rows.slice(from,from+PER);
+    list.innerHTML=slice.length?slice.map(function(s,i){
+      return '<li><span class="no tnum">'+String(from+i+1).padStart(2,'0')+'</span><div>'+
+        '<a class="t" href="#zdroje">'+esc(s.t)+'</a>'+
+        '<div class="m"><span>'+esc(s.p)+'</span>'+(s.off?'<span class="off">úradný dokument</span>':'')+
+        (s.c?'<span>· kauza '+esc(s.c)+'</span>':'')+(s.arch?'<a class="arch" href="#zdroje">archív ↗</a>':'')+'</div>'+
+        '<div class="uses">'+s.u.map(function(u){return '<span class="use">'+esc(u)+'</span>';}).join('')+'</div>'+
+        '</div><span class="d tnum">'+fmt(s.d)+'</span></li>';
+    }).join(''):'<li class="empty">Pre tento filter nie sú žiadne zdroje.</li>';
+    count.textContent=n?('Zobrazené '+(from+1)+'–'+(from+slice.length)+' z '+n):'0 zdrojov';
+    var h='<button type="button" data-p="'+(st.page-1)+'" '+(st.page===1?'disabled':'')+' aria-label="Predchádzajúca strana">←</button>';
+    for(var p=1;p<=np;p++)h+='<button type="button" data-p="'+p+'"'+(p===st.page?' aria-current="page"':'')+'>'+p+'</button>';
+    h+='<button type="button" data-p="'+(st.page+1)+'" '+(st.page===np?'disabled':'')+' aria-label="Ďalšia strana">→</button>';
+    pages.innerHTML=h;
+  }
+  pages.addEventListener('click',function(e){var b=e.target.closest('button');if(!b||b.disabled)return;st.page=+b.dataset.p;render();});
+  document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',x===b);});
+    st.type=b.dataset.type;st.page=1;render();});});
+  document.getElementById('src-sort').addEventListener('change',function(e){st.sort=e.target.value;st.page=1;render();});
+  document.getElementById('src-case').addEventListener('change',function(e){st.kauza=e.target.value;st.page=1;render();});
+  render();
+})();
+(function(){
+  var Y0=2016,Y1=2028,pct=function(y){return ((y-Y0)/(Y1-Y0)*100)+'%'};
+  var axis=document.getElementById('axis');
+  for(var y=Y0;y<=Y1;y+=2){var i=document.createElement('i');i.textContent=y;i.style.left=pct(y);axis.appendChild(i);}
+  document.querySelectorAll('.bar').forEach(function(b){var f=+b.dataset.f,t=+b.dataset.t;b.style.left=pct(f);b.style.width=((t-f)/(Y1-Y0)*100)+'%';});
+  document.querySelectorAll('[data-at]').forEach(function(e){e.style.left=pct(+e.dataset.at);});
+  document.querySelectorAll('.tl .track').forEach(function(tr){var d=document.createElement('span');d.className='today';d.style.left=pct(2026.87);tr.appendChild(d);});
+  var t=document.createElement('span');t.className='today-l';t.textContent='DNES';t.style.left=pct(2026.87);axis.appendChild(t);
+})();
+</script>
+<script>
+(function(){
+  var root=document.documentElement,lbl=document.getElementById('theme-l');
+  function dark(){return root.dataset.theme==='dark'||(!root.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);}
+  function sync(){lbl.textContent=dark()?'Svetlý režim':'Tmavý režim';}
+  try{var t=localStorage.getItem('dosleduj-theme');if(t)root.dataset.theme=t;}catch(e){}
+  sync();
+  document.getElementById('theme-btn').addEventListener('click',function(){
+    root.dataset.theme=dark()?'light':'dark';
+    try{localStorage.setItem('dosleduj-theme',root.dataset.theme);}catch(e){}
+    sync();
+  });
+  function go(v){
+    document.querySelectorAll('[data-view]').forEach(function(el){el.classList.toggle('show',el.dataset.view===v);});
+    document.querySelectorAll('.dbar button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.go===v);});
+    var k=document.getElementById('nav-ludia');
+    if(v==='osoba')k.setAttribute('aria-current','page');else k.removeAttribute('aria-current');
+    window.scrollTo(0,0);
+  }
+  document.addEventListener('click',function(e){var a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();go(a.dataset.go);});
+  go('titulka');
+})();
+</script>
+</body>
+</html>

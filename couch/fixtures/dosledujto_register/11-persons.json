@@ -1,0 +1,79 @@
+[
+  {
+    "_id": "person:0192a1b0-7c03-7000-8000-000000000001",
+    "type": "person",
+    "full_name": "Ján Testovací",
+    "name_variants": [
+      "Ján Testovací",
+      "Jána Testovacieho",
+      "Jánovi Testovaciemu",
+      "Testovací",
+      "Jan Testovaci",
+      "J. T."
+    ],
+    "slug": "jan-testovaci",
+    "birth_year": 1971,
+    "short_bio": {
+      "value": "Bývalý poslanec za Stranu Testovaciu, v rokoch 2019 – 2024 konateľ spoločnosti TestBuild s.r.o.",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000001"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-02-28"
+    },
+    "publish_state": "published",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:05:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "person:0192a1b0-7c03-7000-8000-000000000002",
+    "type": "person",
+    "full_name": "Eva Skúšobná",
+    "name_variants": [
+      "Eva Skúšobná",
+      "Evy Skúšobnej",
+      "Eve Skúšobnej",
+      "Skúšobná",
+      "Eva Skusobna",
+      "E. S."
+    ],
+    "slug": "eva-skusobna",
+    "birth_year": 1980,
+    "short_bio": {
+      "value": "Riaditeľka odboru dotácií na Mestskom úrade Testovice; v novembri 2025 ju súd v kauze Skúšobné dotácie oslobodil.",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000004"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2025-11-04"
+    },
+    "publish_state": "published",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:05:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  },
+  {
+    "_id": "person:0192a1b0-7c03-7000-8000-000000000003",
+    "type": "person",
+    "full_name": "Peter Vzorka",
+    "name_variants": ["Peter Vzorka", "Petra Vzorku", "Vzorka", "P. V."],
+    "slug": "peter-vzorka",
+    "birth_year": 1965,
+    "short_bio": {
+      "value": "Vyšetrovateľ, ktorý viedol vyšetrovanie v kauze Testovací most.",
+      "sources": ["article:0192a1b0-7c02-7000-8000-000000000002"],
+      "derived": false,
+      "derivation": null,
+      "disputed": [],
+      "asserted_at": "2024-03-11"
+    },
+    "publish_state": "published",
+    "created_at": "2026-08-07T09:00:00Z",
+    "updated_at": "2026-08-07T09:00:00Z",
+    "created_by": "user:0192a1b0-7c0c-7000-8000-000000000002",
+    "updated_by": "user:0192a1b0-7c0c-7000-8000-000000000002"
+  }
+]
